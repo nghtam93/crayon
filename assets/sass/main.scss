@@ -1,0 +1,40 @@
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// @import "../libs/bootstrap/css/bootstrap.css";
+// @import "../libs/wowjs/css/animate.css";
+// @import "../libs/slick_slider/css/slick.css";
+
+
+@import "functions";
+@import "variables";
+// @import "utilities";
+
+// Helpers
+@import "_mixin/breakpoints";
+@import "_mixin/flexbox.scss";
+// Layout
+@import "_mixin/grid";
+
+@import "grid";
+
+
+
+
+// @import "_mixin/fonts";
+// @import "_mixin/common";
+// @import "_mixin/general";
+// @import "_mixin/table";
+// @import "_mixin/scrollbar";
+// @import "_mixin/button";
+// @import "_mixin/pagination";
+// @import "_mixin/breadcrumb";
+// @import "_mixin/modal";
+// Component
+@import "_components/normalize";
+@import "_components/header";
+@import "_components/footer";
+// @import "_components/icomoon";
+@import "_components/base";
+// @import "_components/header";
+// @import "_components/footer";
+// Page
+@import "_pages/home";
