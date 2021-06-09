@@ -24,7 +24,7 @@
     <div id="fb-root"></div>
 
     <!-- Header -->
-    <header class="header">
+    <header class="header d-md-none">
         <div class="container">
             <div class="header__wrap">
                 <div class="header-mb__text">
@@ -50,7 +50,8 @@
                 <div>
                     <div class="el__item">
                         <div class="el__thumb dnfix__thumb -contain">
-                            <img src="./images/slider-2.png" alt="">
+                            <img src="./images/slider-2.png" alt="" class="slider-pc d-none d-sm-block">
+                            <img src="./images/slider-2-mb.png" alt="" class="slider-mb d-sm-none">
                             <div class="el__meta">
                                 <div class="el__text">家族みんなの歯を守る<br>
                                     街のやさしい歯医者さん</div>
@@ -79,8 +80,8 @@
                 新宿区新宿の歯科・歯医者なら、ビスカ歯科クリニック
             </div>
         </div>
-        <nav class="main__nav">
-            <div class="container-sm">
+        <nav class="main__nav wow fadeInUp">
+            <div class="container">
             <ul class="">
                 <li class="menu-item">
                     <a href="">トップ <img src="./images/nav-ic-1.png" alt=""></a>
@@ -114,7 +115,7 @@
         <section class="home-intro">
             <div class="container-sm">
                 <div class="row">
-                    <div class="col-md-12 col-lg-6">
+                    <div class="col-md-12 col-lg-6 wow fadeInLeft">
                         <div class="home-intro__meta">
                             <p class="home-intro__title"><img src="./assets/img/flower.svg" alt="">ビスカこども歯科クリニック</p>
                             <div>
@@ -127,7 +128,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12 col-lg-6">
+                    <div class="col-md-12 col-lg-6 wow fadeInRight">
                         <div class="schedule">
                             <table class="table-schedule">
                                 <thead>
@@ -181,7 +182,7 @@
         <section class="home-noteopen">
             <div class="container-sm">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 wow fadeInLeft">
                         <div class="el__box -mask1">
                             <div class="el__title">開院日のお知らせ</div>
                             <img src="./assets/img/line.svg" alt="">
@@ -193,7 +194,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 wow fadeInRight">
                         <div class="el__box -mask2">
                             <div class="el__title">内覧会のお知らせ</div>
                             <img src="./assets/img/line.svg" alt="">
@@ -210,7 +211,7 @@
             </div>
         </section>
 
-        <section class="banner-btn">
+        <section class="banner-btn wow fadeInUp">
             <div class="container-sm">
                 <div class="row no-gutters15">
                     <div class="col-sm-4">
@@ -232,7 +233,7 @@
             </div>
         </section>
 
-        <section class="home-info">
+        <section class="home-info wow fadeInUp">
             <div class="container-sm">
                 <div class="home-info__wrap">
                     <div class="el__header text-center">
@@ -269,9 +270,10 @@
         <section class="home-contact text-center">
             <div class="container-sm">
                 <p class="el__header__title">待ち時間の軽減のため、予約優先で診療を行っております</p>
-                <img src="./assets/img/home-contact-line1.png" alt="">
-                <div class="row">
-                    <div class="col--left col-md-5">
+
+                <div class="home-contact__line -s1"></div>
+                <div class="el__box row">
+                    <div class="col--left col-md-5 wow fadeInLeft">
                         <p class="el__title">お電話でのご予約</p>
                         <p class="el__tel">TEL.03-5292-5151</p>
                         <div>
@@ -280,9 +282,9 @@
                         </div>
                     </div>
 
-                    <div class="col--right col-md-7">
+                    <div class="col--right col-md-7 wow fadeInRight">
                         <p class="el__title">インターネットでご予約（24時間受付）</p>
-                        <div class="d-ms-flex">
+                        <div class="d-md-flex">
                             <div>
                                 <p class="text-md-start mb-4">スマートフォンご利用の方はQRコードの読み込みからもご予約できます。</p>
                                 <button class="btn btn-primary">ご予約はこちら</button>
@@ -293,7 +295,22 @@
                         </div>
                     </div>
                 </div>
-                <img src="./assets/img/home-contact-line2.png" alt="">
+                <div class="home-contact__line -s2"></div>
+            </div>
+        </section>
+
+        <section class="home-calendar d-sm-none">
+            <div class="container">
+                <div class="el__header text-center">
+                    <div class="el__header__wrap">
+                        <div class="el__header__title">診療カレンダー</div>
+                        <div class="el__header__sub">Medical calendar</div>
+                    </div>
+                </div>
+
+                <div class="calendar-wrap  wow zoomIn" style="visibility: visible; animation-name: zoomIn;">
+                    <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;src=aHQzamxmYWFjNWxmZDYyNjN1bGZoNHRxbDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23B39DDB&amp;color=%230B8043&amp;showTitle=0&amp;title=VISCA%20CLINIC%20%E3%81%AE%E8%A8%BA%E7%99%82%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC&amp;showTabs=0&amp;showPrint=0&amp;showTz=0&amp;showCalendars=0&amp;showNav=1&amp;showDate=1" style="border: 0" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+                </div>
             </div>
         </section>
 
@@ -303,13 +320,13 @@
                     <div class="el__header__title">診療<span>理</span>念</div>
                 </div>
                 <div class="row">
-                    <div class="col--right col-md-12 col-lg-6 order-lg-2">
+                    <div class="col--right col-md-12 col-lg-6 order-lg-2 wow fadeInRight">
                         <div class="el__thumb dnfix__thumb -contain">
                             <img src="./images/home-medical-img.png" alt="">
                         </div>
                     </div>
 
-                    <div class="col--left col-md-12 col-lg-6 offset-lgg-1 d-flex">
+                    <div class="col--left col-md-12 col-lg-6 offset-lgg-1 d-flex wow fadeInLeft">
                         <div>
                             <p class="el__title d-none d-md-block">「嬉しい」「楽しい」お口ケアで<br>
                             お子さまの歯の健康をサポートします</p>
@@ -335,7 +352,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col--left col-lg-6 text-center">
+                    <div class="col--left col-lg-6 text-center wow fadeInLeft">
                         <div class="el__thumb dnfix__thumb -contain">
                             <img src="./images/greeting-img.png" alt="">
                         </div>
@@ -345,7 +362,7 @@
                             <p class="el__address">日本 ビスカ</p>
                         </div>
                     </div>
-                    <div class="col--right col-lg-6">
+                    <div class="col--right col-lg-6 wow fadeInRight">
                         <div class="el__title">お口の健康は、<br>
                             お子様の大きな財産になります</div>
                             <div class="el__excerpt">
@@ -358,7 +375,7 @@
                             <div>
                                 <div class="text-center">
                                     <p >経歴</p>
-                                    <img src="./assets/img/home-greeting-line.png" alt="">
+                                    <div class="el__line"></div>
                                 </div>
                                 <div class="el__clgt">
                                     <p>20XX年　〇〇大学　歯学部　卒業</p>
@@ -382,12 +399,12 @@
                     </div>
                 </div>
                 <div class="el__row row no-gutters80">
-                    <div class="col-lg-6 order-lg-2">
+                    <div class="col-lg-6 order-lg-2 wow fadeInLeft">
                         <div class="el__thumb dnfix__thumb -contain">
                             <img src="./images/featured-1.png" alt="">
                         </div>
                     </div>
-                    <div class="col-lgg-5 col-lg-5 offset-lgg-1">
+                    <div class="col-lgg-5 col-lg-5 offset-lgg-1 wow fadeInRight">
                         <div class="el__top d-flex">
                             <div class="el__number"><img src="./assets/img/home-featured-num-1.png" alt=""></div>
                             <div class="el__title">キッズスペース・<br>
@@ -402,12 +419,12 @@
                     
                 </div>
                 <div class="el__row row no-gutters80">
-                    <div class="col-lg-6 ">
+                    <div class="col-lg-6 wow fadeInLeft">
                         <div class="el__thumb dnfix__thumb -contain">
                             <img src="./images/featured-2.png" alt="">
                         </div>
                     </div>
-                    <div class="col-lgg-5 col-lg-6 ">
+                    <div class="col-lgg-5 col-lg-6 wow fadeInRight">
                         <div class="el__top d-flex">
                             <div class="el__number"><img src="./assets/img/home-featured-num-2.png" alt=""></div>
                             <div class="el__title">お子さんのペースにあわせた<br>
@@ -422,12 +439,12 @@
                     
                 </div>
                 <div class="el__row row no-gutters80">
-                    <div class="col-lg-6 order-lg-2">
+                    <div class="col-lg-6 order-lg-2 wow fadeInLeft">
                         <div class="el__thumb dnfix__thumb -contain">
                             <img src="./images/featured-3.png" alt="">
                         </div>
                     </div>
-                    <div class="col-lgg-5 col-lg-6 offset-lgg-1 ">
+                    <div class="col-lgg-5 col-lg-6 offset-lgg-1 wow fadeInRight">
                         <div class="el__top d-flex">
                             <div class="el__number"><img src="./assets/img/home-featured-num-3.png" alt=""></div>
                             <div class="el__title">妊婦さんの歯科治療も<br>
@@ -441,12 +458,12 @@
                     </div>
                 </div>
                 <div class="el__row row no-gutters80">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 wow fadeInLeft">
                         <div class="el__thumb dnfix__thumb -contain">
                             <img src="./images/featured-1.png" alt="">
                         </div>
                     </div>
-                    <div class="col-lgg-5 col-lg-6">
+                    <div class="col-lgg-5 col-lg-6 wow fadeInRight">
                         <div class="el__top d-flex">
                             <div class="el__number"><img src="./assets/img/home-featured-num-4.png" alt=""></div>
                             <div class="el__title">お子さんのペースにあわせた<br>
@@ -471,7 +488,7 @@
                         <div class="el__header__sub">Service</div>
                     </div>
                 </div>
-                <div class="el__box">
+                <div class="el__box wow fadeInUp">
                     <ul class="row">
                         <li class="col-4 col-lg-20">
                             <a href="" class="el__item">
@@ -607,10 +624,10 @@
                         <div class="el__header__sub">Clinic</div>
                     </div>
                 </div>
-                <div class="el__header__excerpt">
+                <div class="el__header__excerpt wow fadeInUp">
                     <p>テキスト入りますテキスト入りますテキスト入りますテキスト入りますテキスト入りますテキスト入りますテキスト入りますテキスト入りますテキスト入りますテキスト入りますテキスト入りますテキスト入りますテキスト入りますテキスト入りますテキスト入りますテキスト入りますテキスト入りますテキスト入ります</p>
                 </div>
-                <div class="el__box row">
+                <div class="el__box row wow fadeInUp">
                     <div class="col-6 col-md-4">
                         <a href="#" class="el__item">
                             <div class="el__thumb">
@@ -675,7 +692,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 wow fadeInLeft">
                         <div class="el__item text-center">
                             <p class="el__title">Facebook</p>
                             <img src="./assets/img/visitus-line-1.svg" alt="">
@@ -684,7 +701,7 @@
                             data-tabs="timeline" data-width="500" data-height="330" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/%E6%97%A5%E6%9C%AC%E3%83%93%E3%82%B9%E3%82%AB%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE-341352426001932/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/%E6%97%A5%E6%9C%AC%E3%83%93%E3%82%B9%E3%82%AB%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE-341352426001932/">日本ビスカ株式会社</a></blockquote></div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 wow fadeInRight">
                         <div class="el__item text-center">
                             <p class="el__title">Twitter</p>
                             <img src="./assets/img/visitus-line-2.svg" alt="">
@@ -692,7 +709,7 @@
                             <a class="twitter-timeline" href="https://twitter.com/Hpseisaku_VISCA?ref_src=twsrc%5Etfw" data-height="330" style="width: 100%;">Tweets by Hpseisaku_VISCA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                         </div>
                     </div>
-                    <div class="instagram__box col-md-12">
+                    <div class="instagram__box col-md-12 wow fadeInUp">
                         <div class="el__item text-center">
                             <p class="el__title">Instagram</p>
                             <img src="./assets/img/visitus-line-3.svg" class="el__line" alt="">
@@ -720,7 +737,7 @@
             </div>
         </section>
 
-        <section class="home-clgt">
+        <section class="home-clgt wow fadeInUp">
             <div class="container-sm">
                 <div class="el__box">
                     <div class="el__item d-flex align-items-center">
@@ -781,9 +798,10 @@
 
         <section class="home-3box">
             <div class="container-sm">
-                <img src="./assets/img/home-3box-line-1.png" class="fluid-img" alt="">
+
+                <div class="el__line"></div>
                 <div class="row">
-                    <div class="el__col col-md-4">
+                    <div class="el__col col-md-4 wow fadeInLeft">
                         <div class="el__item">
                             <div class="el__title">各種保険取り扱い</div>
                             <div class="el__excerpt">
@@ -791,7 +809,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="el__col col-md-4">
+                    <div class="el__col col-md-4 wow fadeInUp">
                         <div class="el__item">
                             <div class="el__title">予約優先診療</div>
                             <div class="el__excerpt">
@@ -799,7 +817,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="el__col col-md-4">
+                    <div class="el__col col-md-4 wow fadeInRight">
                         <div class="el__item">
                             <div class="el__title">急患随時受付</div>
                             <div class="el__excerpt">
@@ -808,14 +826,14 @@
                         </div>
                     </div>
                 </div>
-                <img src="./assets/img/home-3box-line-1.png" class="fluid-img" alt="">
+                <div class="el__line -s2"></div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="container-sm">
-            <div class="row no-gutters50">
+            <div class="row">
                 <div class="col-lg-6">
                     <div class="el__box">
                         <p class="el__title"><img src="./assets/img/flower.svg" alt="">ビスカこども歯科クリニック</p>
@@ -871,6 +889,10 @@
                             </tr>
                             </tbody>
                         </table>
+                    </div>
+                    <div class="home-intro__text">
+                        <p>休診日：木曜・日曜・祝日</p>
+                        <p>★：土曜午後は18時まで</p>
                     </div>
 
                     
@@ -975,6 +997,7 @@
     <!-- end Content -->
     <!-- slick slider -->
     <script src="./libs/slickslider/js/slick.min.js"></script>
+    <script src="./libs/wowjs/js/wow.min.js"></script>
     <script src="./assets/js/main.js"></script>
 
     <script>

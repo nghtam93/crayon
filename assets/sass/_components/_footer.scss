@@ -4,16 +4,21 @@
     padding: 90px 0 40px;
     font-size: 18px;
     line-height: 35px;
-    .container-sm{
-        padding-right: 25px;
-        padding-left: 25px;
+    .container{
+        max-width: 1400px;
     }
     .el{
         &__title{
-            font-size: 38px;
+            font-size: 36px;
             line-height: 67px;
-            margin-bottom: 0;
+            margin-bottom: 15px;
             font-family: 'TsukuAVintageMinLPro-R';
+            img{
+                position: relative;
+                top: 6px;
+                width: 40px;
+                height: 44px;
+            }
         }
         &__tel{
             font-size: 30px;
@@ -22,7 +27,7 @@
         }
     }
     .schedule{
-        margin-bottom: 30px;
+        margin-top: 15px;
     }
     &__socical{
         margin-bottom: 30px;
@@ -40,20 +45,19 @@
         ul{
             list-style: none;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             padding-left: 0;
             margin: 0;
             list-style: none;
+            justify-content: center;
             li{
                 position: relative;
                 text-align: center;
-                flex-grow: 1;
             }
             a{
                 position: relative;
                 display: block;
-                // padding: 5px 30px;
-                margin: 5px 30px;
+                margin: 5px 20px;
                 color: #504B46;
                 text-decoration: none;
                 transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
@@ -85,9 +89,9 @@
             }
         }
         @media (min-width: 992px){
-            ul {
-                flex-direction: row;
-            }
+            // ul {
+            //     flex-direction: row;
+            // }
         }
     }
     &__map{
@@ -208,7 +212,6 @@ transition: all .5s;
         z-index: 99;
         left: 0;
         width: 100%;
-        display: flex;
         justify-content: center;
         a{
             display: block;
@@ -238,6 +241,9 @@ transition: all .5s;
     @media (max-width: 767px){
         &__pc{
             display: none;
+        }
+        &__mb{
+            display: flex;
         }
     }
     @media (min-width: 768px){
