@@ -1568,12 +1568,14 @@ body.show-menu {
       font-size: 32px; } }
   @media (max-width: 767px) {
     .footer {
-      padding: 40px 0 40px; }
+      padding: 40px 0 40px;
+      font-size: 14px;
+      line-height: normal; }
       .footer .el__tel {
         color: #D45768; }
-      .footer .footer__map {
+      .footer__map {
         margin: 0 -15px; }
-      .footer .footer__socical {
+      .footer__socical {
         margin-top: 30px;
         margin-bottom: 0; }
       .footer .el__box {
@@ -1587,12 +1589,8 @@ body.show-menu {
       .footer .row.no-gutters50 > [class^="col"], .footer .row.no-gutters50 > [class*=" col"] {
         padding-right: 15px;
         padding-left: 15px; }
-      .footer .footer__copyright {
-        padding-bottom: 120px; } }
-  @media (max-width: 767px) {
-    .footer {
-      font-size: 14px;
-      line-height: normal; }
+      .footer__copyright {
+        padding-bottom: 120px; }
       .footer .el__title {
         font-size: 24px; }
         .footer .el__title img {
