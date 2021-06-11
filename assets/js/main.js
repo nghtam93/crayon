@@ -1,12 +1,12 @@
 /*----header----*/
-$('.btn-menu').click(function() {
+$('.btn-menu__mobile').click(function() {
     $(this).toggleClass('active');
 });
-$('.btn-menu').click(function() {
+$('.btn-menu__mobile').click(function() {
     $('body').toggleClass('show-menu');
 });
 $('.nav-mobile__list li .link').click(function() {
-    $('.btn-menu').removeClass('active');
+    $('.btn-menu__mobile').removeClass('active');
 });
 $('.nav-mobile__list li .link').click(function() {
     $('body').removeClass('show-menu');

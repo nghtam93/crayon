@@ -1,13 +1,17 @@
 .header__textclgt{
     margin-top: 15px;
     .el{
+        &__box{
+            @include flex-content(wrap, null, center);
+        }
         &--right{
             margin-left: auto;
         }
         &__title{
-            font-size: 29px;
+            font-size: 28px;
             line-height: 34px;
             color: #504B46;
+            margin-bottom: 15px;
             img{
                 position: relative;
                 top: 3px;
@@ -34,6 +38,20 @@
             }
         }
     }
+    @media (max-width: 991px){
+        .el--right {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+    @media (max-width: 767px){
+        .el--right {
+            margin-top: 0;
+        }
+    }
+    @media (max-width: 575px){
+        
+    }
     @media (min-width: 1600px){
         .container{
             max-width: 1200px;
@@ -41,6 +59,7 @@
     }
 }
 .page__header{
+    @include flex-content(wrap, null, center);
     padding: 150px 0;
     background-image: url(../../assets/img/access-header-bg_1.png);
     background-repeat: no-repeat;
@@ -54,9 +73,9 @@
         &__title{
             font-size: 44px;
             font-weight: 500;
-            line-height: 55px;
             line-height: 77px;
             margin-bottom: 0;
+            letter-spacing: 5px;
         }
         &__sub{
             font-size: 35px;
@@ -65,6 +84,21 @@
             line-height: normal;
             color: $color-primary;
             margin-bottom: 0;
+        }
+    }
+    @media (max-width: 991px){
+        background-size: cover;
+    }
+    @media (max-width: 575px){
+        .el{
+            &__title{
+                font-size: 28px;
+                line-height: normal;
+            }
+            &__sub{
+                font-size: 25px;
+                line-height: normal;
+            }
         }
     }
 }
@@ -98,12 +132,22 @@
             margin-bottom: 50px;
         }
     }
+    @media (max-width: 575px){
+        padding: 30px 0;
+        .el{
+            &__header{
+                &__title{
+                    font-size: 28px;
+                    line-height: normal;
+                }
+            }
+        }
+    }
 }
 
 .access__trans{
     padding: 50px 0;
     .el{
-
         &__header{
             &__title{
                 font-size: 30px;
@@ -132,7 +176,7 @@
                     background-image: url(../../assets/img/access__trans-border.png);
                     background-repeat:no-repeat;
                     background-position: center;
-                    background-size: contain;
+                    background-size: 100% 100%;
                     display: block; 
                     width: 100%;
                     height: 3px;
@@ -141,7 +185,7 @@
             
         }
         &__li__wrap{
-            @include flex-content(wrap, null, center);
+            @include flex-content(nowrap, null, center);
             padding: 25px 10px;
         }
         
@@ -170,10 +214,39 @@
             line-height: 35px;
         }
     }
+    @media (max-width: 767px){
+        .el__title {
+            @include flex-col(170px);
+            font-size: 20px;
+            line-height: normal;
+        }
+    }
+    @media (max-width: 575px){
+        text-align: center;
+        .el{
+            &__header{
+                &__title{
+                    font-size: 28px;
+                    line-height: normal;
+                }
+            }
+            &__li__wrap{
+                display: block;
+            }
+            &__icon{
+                margin: auto;
+            }
+            &__title{
+                @include flex-col(100%);
+                margin-right: 0;
+            }
+        }
+       
+    }
 }
 
 .access__box3{
-    padding: 100px;
+    padding: 100px 0;
     .el{
         &__thumb{
             padding-top: 68.075%;
@@ -182,10 +255,19 @@
             margin-bottom: 30px;
         }
     }
+    @media (max-width: 991px){
+        padding: 50px 0;
+    }
+    
+    @media (max-width: 575px){
+        padding: 30px 0;
+    }
+    
 }
 
 .access__details{
     padding: 50px 0;
+    overflow: hidden;
     .el{
         &__header{
             text-align: center;
@@ -251,10 +333,40 @@
     .table-schedule {
         width: 100%;
     }
+    @media (max-width: 991px){
+        .table-schedule th, .table-schedule td {
+            min-width: 40px;
+        }
+    }
+    @media (max-width: 575px){
+
+        .el__header {
+            margin-bottom: 30px;
+            &__title{
+                font-size: 28px;
+                line-height: normal;
+            }
+        }
+
+        .table-schedule th, .table-schedule td {
+            min-width: 20px;
+        }
+        font-size:14px;
+        .el__box {
+            padding: 0px;
+        }
+        .el__item {
+            padding: 20px 20px;
+        }
+        
+        .el__item--left {
+            @include flex-col(100%);
+        }
+    }
 }
 
 .access__info{
-    padding: 100px 0 200px;
+    padding: 100px 30px 200px;
     .el{
         &__header{
             text-align: center;
@@ -292,26 +404,6 @@
         &__item{
             position: relative;
             margin-bottom: 40px;
-            &:not(:nth-child(3n)){
-                .el__thumb{
-                    &::after{
-                        content: "";
-                        font-size: 30px;
-                        line-height: 50px;
-                        position: absolute;
-                        background-image: url(../../assets/img/arow.png);
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        background-size: cover;
-                        width: 20px;
-                        height: 38px;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        right: -25px;
-                        color: $color-primary;
-                    }
-                }
-            }
         }
         &__number{
             position: absolute;
@@ -345,6 +437,84 @@
             line-height: 35px;
             color: #504B46;
             margin-bottom: 0;
+        }
+    }
+    @media (max-width: 991px){
+        padding: 100px 30px 100px;
+        .el__box {
+            padding: 60px 30px 30px;
+        }
+    }
+    @media (max-width: 767px){
+        .el__box{
+            background: transparent;
+            padding: 60px 0px 30px;
+            &:before {
+                width: 230px;
+                height: 75px;
+                position: absolute;
+                top: 0px;
+                left: 0;
+            }
+        }
+        
+    }
+    @media (max-width: 575px){
+        padding: 0px 30px 0px;
+        .el__box:before {
+            top: -10px;
+        }
+        .el__header__title{
+            font-size: 28px;
+            line-height: normal;
+        }
+    }
+    @media (min-width: 768px){
+        .el{
+            &__item{
+                &:not(:nth-child(3n)){
+                    .el__thumb{
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            background-image: url(../../assets/img/arow.png);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            width: 20px;
+                            height: 38px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            right: -25px;
+                            color: $color-primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media ( min-width: 576px ) and ( max-width: 767px ) {
+        .el{
+            &__item{
+                &:nth-child(2n + 1){
+                    .el__thumb{
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            background-image: url(../../assets/img/arow.png);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            width: 20px;
+                            height: 38px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            right: -25px;
+                            color: $color-primary;
+                        }
+                    }
+                }
+            }
         }
     }
 }

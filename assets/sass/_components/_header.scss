@@ -10,82 +10,6 @@
             height: 20px;
         }
     }
-    .btn-menu {
-        display: none;
-        position: relative;
-        background: transparent;
-        background-image: url(../../assets/img/menu-bg.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        cursor: pointer;
-        width: 31px;
-        height: 31px;
-        -webkit-transition: all ease .238s;
-        -moz-transition: all ease .238s;
-        transition: all ease .238s;
-
-        &:before, &:after, span {
-            background-color: #fff;
-            -webkit-transition: all ease .238s;
-            -moz-transition: all ease .238s;
-            transition: all ease .238s;
-        }
-
-        &:before, &:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            height: 2px;
-            width: 15px;
-            left: calc(50% - 8px);
-            top: 50%;
-            -webkit-transform-origin: 50% 50%;
-            -ms-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-            border-radius: 10px;
-        }
-
-        span {
-            position: absolute;
-            width: 15px;
-            height: 2px;
-            left: calc(50% - 8px);
-            top: 50%;
-            overflow: hidden;
-            text-indent: 200%;
-            border-radius: 10px;
-        }
-
-        &:before {
-            -webkit-transform: translate3d(0, -6px, 0);
-            transform: translate3d(0, -6px, 0);
-        }
-
-        &:after {
-            -webkit-transform: translate3d(0, 6px, 0);
-            transform: translate3d(0, 6px, 0);
-        }
-
-        &.active {
-            span {
-                opacity: 0;
-            }
-
-            &:before {
-                background-color: #333333;
-                -webkit-transform: rotate3d(0, 0, 1, 45deg);
-                transform: rotate3d(0, 0, 1, 45deg);
-            }
-
-            &:after {
-                background-color: #333333;
-                -webkit-transform: rotate3d(0, 0, 1, -45deg);
-                transform: rotate3d(0, 0, 1, -45deg);
-            }
-        }
-    }
-
     @media (max-width: 991px) {
         &__wrap {
             display: flex;
@@ -93,12 +17,86 @@
             align-items: center;
 
         }
+    }
+}
 
-        .btn-menu {
-            display: block;
-        }
+.btn-menu__mobile {
+    display: none;
+    position: relative;
+    background: transparent;
+    background-image: url(../../assets/img/menu-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    width: 31px;
+    height: 31px;
+    -webkit-transition: all ease .238s;
+    -moz-transition: all ease .238s;
+    transition: all ease .238s;
+
+    &:before, &:after, span {
+        background-color: #fff;
+        -webkit-transition: all ease .238s;
+        -moz-transition: all ease .238s;
+        transition: all ease .238s;
     }
 
+    &:before, &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 2px;
+        width: 15px;
+        left: calc(50% - 8px);
+        top: 50%;
+        -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        border-radius: 10px;
+    }
+
+    span {
+        position: absolute;
+        width: 15px;
+        height: 2px;
+        left: calc(50% - 8px);
+        top: 50%;
+        overflow: hidden;
+        text-indent: 200%;
+        border-radius: 10px;
+    }
+
+    &:before {
+        -webkit-transform: translate3d(0, -6px, 0);
+        transform: translate3d(0, -6px, 0);
+    }
+
+    &:after {
+        -webkit-transform: translate3d(0, 6px, 0);
+        transform: translate3d(0, 6px, 0);
+    }
+
+    &.active {
+        span {
+            opacity: 0;
+        }
+
+        &:before {
+            background-color: #333333;
+            -webkit-transform: rotate3d(0, 0, 1, 45deg);
+            transform: rotate3d(0, 0, 1, 45deg);
+        }
+
+        &:after {
+            background-color: #333333;
+            -webkit-transform: rotate3d(0, 0, 1, -45deg);
+            transform: rotate3d(0, 0, 1, -45deg);
+        }
+    }
+    @media (max-width: 991px) {
+        display: block;
+    }
 }
 
 .nav-mobile {
