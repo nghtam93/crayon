@@ -4,6 +4,11 @@
         font-size:12px;
         text-align: center;
     }
+    @media (min-width: 1600px){
+        .container{
+            max-width: 1200px;
+        }
+    }
 }
 .home-slider{
     overflow: hidden;
@@ -239,6 +244,7 @@
         vertical-align: middle;
         padding: 4px 12px;
         min-width: 44px;
+        font-weight: 400;
     }
     tr {
         border-bottom: 1px solid #504B46;
@@ -1022,8 +1028,7 @@
         .el__header {
             margin-bottom: 50px;
         }
-        .row.no-gutters80{margin-right:-20px;margin-left:-20px}
-        .row.no-gutters80 > [class^="col"],.row.no-gutters80 > [class*=" col"]{padding-right:20px;padding-left:20px}
+        .row.-row80{--bs-gutter-x: 40px;}
     }
 
     @media (max-width: 1200px){
@@ -1440,19 +1445,22 @@
                 @include flex-col(120px);
                 margin-right: 20px;
             }
-            &:first-child{
+            &--right{
+                flex-grow: 1;
+            }
+            &.-st1{
                 background-image: url(../../assets/img/home-clgt-item-1.png);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
             }
-            &:nth-child(3){
+            &.-st2{
                 background-image: url(../../assets/img/home-clgt-item-2.png);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
             }
-            &:nth-child(5){
+            &.-st3{
                 background-image: url(../../assets/img/home-clgt-item-3.png);
                 background-position: center;
                 background-repeat: no-repeat;
