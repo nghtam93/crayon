@@ -52,6 +52,10 @@ img {
         --bs-gutter-x: 30px;
     }
     
+    &.-x60{
+        --bs-gutter-x: 60px;
+    }
+    
 }
 
 .row.no-gutters80{margin-right:-40px;margin-left:-40px}
@@ -161,7 +165,7 @@ img {
 }
 
 
-.container,.container-sm,.container-1024 {
+.container,.container-sm,.container-1024,.container-1200, .container-fluid {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -188,7 +192,10 @@ img {
     }
 }
 .container-1024{
-    max-width: 1024px;
+    max-width: 1054px;
+}
+.container-1200{
+    max-width: 1230px;
 }
 
 @media (min-width:992px){

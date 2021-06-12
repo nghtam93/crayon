@@ -236,6 +236,7 @@
 }
 
 .table-schedule {
+    width: 100%;
     border-collapse: collapse;
     font-size: 18px;
     color: #504B46;
@@ -299,19 +300,9 @@
                 }
             }
         }
-        .schedule {
-            overflow: auto;
-            max-width: 100%;
-        }
     }
     @media  (max-width: 600px ){
         font-size: 14px;
-        .schedule {
-            th, td {
-            min-width: 40px;
-            }
-        }
-        
     }
     @media  (max-width: 479px ){
         
@@ -324,7 +315,7 @@
         }
 
         th, td {
-            min-width: 30px;
+            min-width: 25px;
         }
     }
     @media  (max-width: 353px ){

@@ -1,0 +1,396 @@
+.clinic__intro{
+    padding: 50px 0;
+    overflow: hidden;
+    &__text{
+        font-size: 16px;
+        line-height: 35px;
+        color: #504B46;
+        margin-bottom: 50px;
+    }
+    .el{
+        &__header{
+            text-align: center;
+            margin-bottom: 50px;
+            &__title{
+                position: relative;
+                display: inline-block;
+                font-size: 38px;
+                line-height: 66px;
+                letter-spacing: 5px;
+                font-weight: 500;
+                margin-bottom: 0;
+                &::after{
+                    content: "";
+                    background-image: url(../../assets/img/access-header-line.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 100% 100%;
+                    display: block;
+                    width: 100%;
+                    height: 15px;
+                }
+            }
+        }
+    }
+    @media (max-width: 575px){
+        padding: 30px 0;
+        .el{
+            &__header{
+                &__title{
+                    font-size: 28px;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
+
+.clinic__slider{
+    
+    .el{
+        &__item{
+            position: relative;
+            z-index: 1;
+            &--sm {
+                border-radius: 20px;
+                .el__thumb{
+
+                }
+            }
+        }
+    }
+    &-for{
+        margin-bottom: 60px;
+        .el{
+            &__thumb{
+               position: relative;
+               &::after{
+                content: "";
+                position: absolute;
+                top: -20px;
+                left: -20px;
+                width: calc(100% + 40px);
+                height: calc(100% + 40px);
+                background-image: url(../../assets/img/clinic-intro-wrap.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100% 100%;
+               }
+            }
+            &__text{
+                position: absolute;
+                z-index: 1;
+                bottom: -20px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                max-width: 54%;
+                height: 70px;
+                line-height: 70px;
+                text-align: center;
+                font-size: 25px;
+                color: #504B46;
+                background-image: url(../../assets/img/slider__text.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100% 100%;
+            }
+        }
+
+        .slick-list {margin: 0 -30px;}
+        .slick-slide>div {padding: 20px 80px;    margin-bottom: 20px; margin: 0 30px;}
+        .slick-prev,.slick-next{
+            width: 68px;
+            height: 68px;
+            z-index: 1;
+            &:before, &:before{
+                display: none;
+            }
+        }
+        .slick-prev {
+            left: calc(50% - 480px);
+            background: url(../../assets/img/prev.png);
+            background-size: contain;
+        }
+        .slick-next {
+            right: calc(50% - 480px);
+            background: url(../../assets/img/next.png);
+            background-size: contain;
+        }
+    }
+    &-nav{
+        &__wrapper{
+            padding: 75px 0 85px;
+            background-image: url(../../assets/img/clinic-intro-sm-bg.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+        }
+        .slick-dots {
+            bottom: -70px;
+        }
+        .slick-list {margin: 0 -15px;}
+        .slick-slide>div {padding: 0 15px;}
+    }
+    @media (max-width: 991px){
+        &-for{
+           .slick-slide > div {
+                padding: 20px 40px;
+                margin-bottom: 20px;
+            }
+            .slick-prev {
+                left: 0;
+            }
+            .slick-next {
+                right: 0;
+            }
+        }
+    }
+    @media (max-width: 575px){
+        &-for{
+            .slick-slide > div {
+                padding: 20px 0px;
+            }
+            .slick-prev, .slick-next {
+                width: 40px;
+                height: 40px;
+            }
+            .el{
+                &__text{
+                    font-size: 18px;
+                    max-width: 72%;
+                    height: 45px;
+                    line-height: 45px;
+                }
+            }
+        }
+
+    }
+}
+
+.clinic__foreign{
+    padding-top: 50px;
+    margin-bottom: 80px;
+    .el{
+        &__box{
+            background-color: rgba(222, 182, 155, .13);
+            border-radius: 25px;
+            padding: 60px 88px 60px;
+        }
+        &__item{
+            margin-bottom: 20px;
+        }
+        &__title{
+            font-size: 33px;
+            line-height: 57px;
+            color: #504B46;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        &__thumb{
+            @include flex-col(320px);
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+        &__line{
+            content: "";
+            background-image: url(../../assets/img/clinic-line.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 100%;
+            height: 9px;
+            margin: 15px 0 30px;
+            display: block;
+        }
+    }
+    @media (max-width: 991px){
+        .el{
+            &__box{
+                padding: 60px 44px;
+            }
+            &__thumb{
+                @include flex-col(200px);
+            }
+        }
+    }
+    @media (max-width: 767px){
+        .el{
+            &__thumb{
+                @include flex-col(100%);
+                margin-right: 0;
+            }
+        }
+    }
+    @media (max-width: 575px){
+        .el{
+            &__box{
+                padding: 50px 15px;
+            }
+            &__title{
+                font-size: 28px;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+.clinic__intro2{
+    padding-bottom: 50px;
+    .el{
+        &__header{
+            text-align: center;
+            margin-bottom: 60px;
+            &__title{
+                position: relative;
+                display: inline-block;
+                font-size: 38px;
+                line-height: 66px;
+                letter-spacing: 5px;
+                font-weight: 500;
+                margin-bottom: 0;
+                &::after{
+                    content: "";
+                    background-image: url(../../assets/img/access-header-line.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 100% 100%;
+                    display: block;
+                    width: 100%;
+                    height: 15px;
+                }
+            }
+        }
+    
+        
+        &__item{
+            margin-bottom: 60px;
+        }
+        &__thumb{
+            margin-bottom: 30px;
+            border-radius: 20px;
+            position: relative;
+               &::after{
+                content: "";
+                position: absolute;
+                top: -10px;
+                left: -10px;
+                width: calc(100% + 20px);
+                height: calc(100% + 20px);
+                background-image: url(../../assets/img/clinic-intro2-wrap.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100% 100%;
+               }
+        }
+        &__title{
+            font-size: 25px;
+            line-height: 43px;
+            color: #504B46;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        &__excerpt{
+            font-size: 16px;
+            line-height: 35px;
+            color: #504B46;
+            margin-bottom: 0;
+        }
+    }
+    @media (max-width: 1199px){
+        .row.-x60 {
+            --bs-gutter-x: 30px;
+        }
+        .el{
+            &__item {
+                padding: 0 15px;
+            }
+        }
+    }
+    @media (max-width: 575px){
+        
+        .el{
+            &__header{
+                &__title{
+                    font-size: 28px;
+                    line-height: normal;
+                }
+            }
+           
+        }
+    }
+}
+
+.clinic__3box{
+    margin-bottom: 130px;
+    .el{
+        &__header{
+            text-align: center;
+            &__title{
+                position: relative;
+                display: inline-block;
+                font-size: 33px;
+                line-height: 57px;
+                letter-spacing: 5px;
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+        }
+        
+        &__box{
+            background-color: rgba(222, 182, 155, .13);
+            border-radius: 25px;
+            padding: 60px 88px 30px;
+        }
+        &__item{
+            margin-bottom: 30px;
+        }
+        &__title{
+            font-size: 23px;
+            line-height: 35px;
+            color: $color-primary;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        &__excerpt{
+            font-size: 16px;
+            line-height: 35px;
+            color: #504B46;
+            margin-bottom: 0;
+        }
+        &__thumb{
+            margin-bottom: 20px;
+        }
+        &__line{
+            content: "";
+            background-image: url(../../assets/img/clinic-line.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 100%;
+            height: 9px;
+            margin: 15px 0 40px;
+            display: block;
+        }
+    }
+    @media (max-width: 991px){
+        .el{
+            &__box{
+                padding: 60px 44px;
+            }
+        }
+    }
+    @media (max-width: 575px){
+        .el{
+            &__box{
+                padding: 50px 15px;
+            }
+            &__header{
+                &__title{
+                    font-size: 28px;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
