@@ -19,6 +19,7 @@
                 letter-spacing: 5px;
                 font-weight: 500;
                 margin-bottom: 0;
+                font-family:'TsukuAVintageMinLPro-R';
                 &::after{
                     content: "";
                     background-image: url(../../assets/img/access-header-line.png);
@@ -186,6 +187,7 @@
             color: #504B46;
             text-align: center;
             margin-bottom: 0;
+            font-family:'TsukuAVintageMinLPro-R';
         }
         &__thumb{
             @include flex-col(320px);
@@ -249,6 +251,7 @@
                 letter-spacing: 5px;
                 font-weight: 500;
                 margin-bottom: 0;
+                font-family:'TsukuAVintageMinLPro-R';
                 &::after{
                     content: "";
                     background-image: url(../../assets/img/access-header-line.png);
@@ -262,7 +265,6 @@
             }
         }
     
-        
         &__item{
             margin-bottom: 60px;
         }
@@ -270,18 +272,18 @@
             margin-bottom: 30px;
             border-radius: 20px;
             position: relative;
-               &::after{
-                content: "";
-                position: absolute;
-                top: -10px;
-                left: -10px;
-                width: calc(100% + 20px);
-                height: calc(100% + 20px);
-                background-image: url(../../assets/img/clinic-intro2-wrap.png);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: 100% 100%;
-               }
+            &::after{
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: calc(100% + 20px);
+            height: calc(100% + 20px);
+            background-image: url(../../assets/img/clinic-intro2-wrap.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            }
         }
         &__title{
             font-size: 25px;
@@ -334,6 +336,7 @@
                 letter-spacing: 5px;
                 font-weight: 500;
                 margin-bottom: 0;
+                font-family:'TsukuAVintageMinLPro-R';
             }
         }
         

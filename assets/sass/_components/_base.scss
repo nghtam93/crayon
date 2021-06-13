@@ -48,6 +48,10 @@ img {
 /* fix col */
 
 .row {
+    &.-x15{
+        --bs-gutter-x: 15px;
+    }
+
     &.-x30{
         --bs-gutter-x: 30px;
     }
@@ -200,6 +204,7 @@ img {
 
 @media (min-width:992px){
 	.col-lg-20{-ms-flex:0 0 20%;flex:0 0 20%;max-width:20%;}
+
 }
 
 @media (min-width: 1600px){
@@ -217,6 +222,14 @@ img {
         order: 1!important;
     }
     .order-lg-2 {
+        order: 1!important;
+    }
+}
+@media (min-width: 768px){
+    .order-md-1 {
+        order: 1!important;
+    }
+    .order-md-2 {
         order: 1!important;
     }
 }

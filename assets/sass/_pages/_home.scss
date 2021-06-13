@@ -78,6 +78,25 @@
     font-size: 18px;
     line-height: 31px;
     margin-bottom: 50px;
+    .el__menu{
+        >li{
+            +li{
+                &::after{
+                    content: "";
+                    width: 3px;
+                    height: 43px;
+                    background-image: url(../../assets/img/nav-line.png);
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat-x: repeat;
+                    display: block;
+                    position: absolute;
+                    top: 18px;
+                    left: 0;
+                }
+            }
+        }
+    }
     ul{
         list-style: none;
         display: flex;
@@ -121,21 +140,21 @@
                     color:#f08e8b;
                 }
             }
-            +li{
-                &::after{
-                    content: "";
-                    width: 3px;
-                    height: 43px;
-                    background-image: url(../../assets/img/nav-line.png);
-                    background-size: contain;
-                    background-position: center;
-                    background-repeat-x: repeat;
-                    display: block;
-                    position: absolute;
-                    top: 18px;
-                    left: 0;
-                }
-            }
+            // +li{
+            //     &::after{
+            //         content: "";
+            //         width: 3px;
+            //         height: 43px;
+            //         background-image: url(../../assets/img/nav-line.png);
+            //         background-size: contain;
+            //         background-position: center;
+            //         background-repeat-x: repeat;
+            //         display: block;
+            //         position: absolute;
+            //         top: 18px;
+            //         left: 0;
+            //     }
+            // }
             a{
                 display: block;
                 padding: 5px 30px;
@@ -392,8 +411,12 @@
     padding: 50px 0 35px;
     .el{
           &__item{
-            background-color: #C3C3C3;
-            border: 1px solid #504B46;
+            // background-color: #C3C3C3;
+            background-image: url(../../assets/img/banner-btn-border.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            // border: 1px solid #504B46;
             border-radius: 20px;
             margin-bottom: 15px;
             font-size: 18px;
@@ -540,9 +563,6 @@
                 font-size: 25px;
             }
         }
-    }
-    @media (min-width: 1600px){
-
     }
 }
 

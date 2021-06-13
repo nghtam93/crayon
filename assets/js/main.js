@@ -23,13 +23,25 @@ var back_to_top=$(".back__to--top"),offset=220,duration=500;$(window).scroll(fun
 /*----end scrolltop----*/
 
 var wow = new WOW(
-    {
-      boxClass:     'wow',
-      animateClass: 'animated',
-      offset:       0,
-      mobile:       true,
-      live:         true
-    }
-  );
-  wow.init();
-  
+{
+    boxClass:     'wow',
+    animateClass: 'animated',
+    offset:       0,
+    mobile:       true,
+    live:         true
+}
+);
+wow.init();
+
+/* Detect open_under*/ 
+function open_under(elem) {
+    $(elem).click(function(e) {
+        e.preventDefault();
+        $(this).toggleClass('has_under_open');
+        $(this).next().toggleClass('show');
+    });
+}
+
+$(document).ready(function() {
+    open_under('.service__nav .has_under > a');
+})
