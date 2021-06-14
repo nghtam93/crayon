@@ -440,12 +440,39 @@
 .home-info{
     padding: 20px 0 35px;
     &__wrap {
-       margin-bottom: 20px;
-       padding: 80px 100px 80px;
-       background-image: url(../../assets/img/home-info.png);
-       background-size: 100% 100%;
-       background-repeat: no-repeat;
-       background-position: center;
+        position: relative;
+        margin-bottom: 20px;
+        padding: 80px 100px 80px;
+        background-image: url(../../assets/img/home-info.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        &:before{
+            content: "";
+            background-image: url(../../assets/img/home-info-top.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 140px;
+            height: 132px;
+            display: block;
+            position: absolute;
+            top: -30px;
+            right: -45px;
+        }
+        &:after{
+            content: "";
+            background-image: url(../../assets/img/home-info-bottom.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 91px;
+            height: 105px;
+            display: block;
+            position: absolute;
+            bottom: -15px;
+            left: -35px;
+        }
     }
     .el{
         &__header{
@@ -469,7 +496,6 @@
                     left: 0;;
                 }
             }
-           
            
             &__title{
                font-size: 30px;
@@ -535,13 +561,26 @@
             padding: 0px 15px 40px 0;
         }
     }
+    @media (max-width: 767px){
+        &__wrap{
+            &:before {
+                width: 95px;
+                height: 90px;
+                top: -20px;
+                right: 0;
+            }
+            &:after{
+                width: 58px;
+                height: 67px;
+                left: 0;
+            }
+        }
+    }
     @media (max-width: 575px){
         padding: 15px 0 35px;
-        &__wrap{
+        &__wrap {
             background-image: url(../../assets/img/home-info-mb.png);
-        }
-        .home-info__wrap {
-            padding: 80px 30px 80px;
+            padding: 50px 30px 50px;
         }
         .el__item {
             font-size: 15px;
@@ -570,16 +609,45 @@
     padding: 50px 0;
     
     &__line{
+        position: relative;
         width: 100%;
-        height: 17px;
+        height: 13px;
         margin: 15px 0;
         background-image: url(../../assets/img/home-contact-line1.png);
         background-repeat:no-repeat;
         background-position: center;
         background-size: contain;
+        &::before,&::after{
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 0px;
+            width: 13px;
+            height: 13px;
+            background-image: url(../../assets/img/dot.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        &::after{
+            top: -2px;
+            left: auto;
+            right: -1px;
+        }
+        
         &.-s2{
             background-image: url(../../assets/img/home-contact-line2.png);
+            &::before{
+                left: 0;
+                top: 0;
+            }
+            &::after{
+                left: auto;
+                top: 2px;
+                right: -1px;
+            }
         }
+
     }
     .el__box{
         padding: 20px 0;
@@ -643,6 +711,22 @@
         }
     }
     @media (max-width: 767px){
+        &__line{
+            background-size: auto;
+            &::before {
+                top: 0px;
+                left: -2px;
+            }
+            &::after {
+                top: 2px;
+            }
+            &.-s2:before{
+                left: -2px;
+            }
+            &.-s2:after{
+                top: 0px;
+            }
+        }
         .col--left{
             &:after{
                 background-image: url(../../assets/img/line-bottom.png);

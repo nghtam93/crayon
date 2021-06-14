@@ -99,7 +99,7 @@
         }
 
         .slick-list {margin: 0 -30px;}
-        .slick-slide>div {padding: 20px 80px;    margin-bottom: 20px; margin: 0 30px;}
+        .slick-slide>div {padding: 40px 80px;margin: 0 30px 20px;}
         .slick-prev,.slick-next{
             width: 68px;
             height: 68px;
@@ -163,6 +163,11 @@
                     height: 45px;
                     line-height: 45px;
                 }
+            }
+        }
+        &-nav{
+            &__wrapper{
+                padding: 50px 0 60px;
             }
         }
 
