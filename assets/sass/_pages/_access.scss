@@ -97,6 +97,7 @@
 
     .el{
         &__box{
+            min-width: 320px;
             padding: 130px 111px;
             text-align: center;
             background-image: url(../../assets/img/page-header-box.png);
@@ -151,7 +152,7 @@
         }
         .el{
             &__box {
-                padding: 130px 94px;
+                padding: 130px 75px;
                 &__wrapper{
                     background-size: cover;
                     &:before {
@@ -166,6 +167,9 @@
     }
     @media (max-width: 575px){
         .el{
+            &__box{
+                padding: 130px 40px;
+            }
             &__title{
                 font-size: 28px;
                 line-height: normal;
