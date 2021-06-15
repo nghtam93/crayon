@@ -20,6 +20,11 @@
                 height: 44px;
             }
         }
+        &__sub{
+            font-size: 18px;
+            line-height: 35px;
+            margin-bottom: 10px;
+        }
         &__tel{
             font-size: 30px;
             line-height: 52px;
@@ -110,20 +115,41 @@
         padding: 40px 0 40px;
         font-size: 14px;
         line-height: normal;
-        .el__tel {
-            color: #D45768;
+        .el{
+            &__box{
+                text-align: center;
+            }
+            &__title {
+                font-size: 24px;
+                line-height: normal;
+                margin-bottom: 10px;
+                img{
+                    width: 25px;
+                    height: 27px;
+                    margin-right: 10px;
+                    position: relative;
+                    top: 3px;
+                }
+            }
+            &__tel {
+                font-size: 28px;
+                line-height: 49px;
+                margin-bottom: 5px;
+                color: #D45768;
+            }
+            &__sub{
+                font-size: 14px;
+                line-height: 25px;
+                margin-bottom: 0;
+            }
         }
-
+        
         &__map {
             margin: 0 -15px;
         }
         &__socical {
             margin-top: 30px;
             margin-bottom: 0;
-        }
-        
-        .el__box{
-            text-align: center;
         }
         .container-sm {
             padding-right: 15px;
@@ -139,17 +165,6 @@
         }
         &__copyright {
             padding-bottom: 120px;
-        }
-        
-        .el__title {
-            font-size: 24px;
-            img{
-                width: 25px;
-                height: 27px;
-                margin-right: 10px;
-                position: relative;
-                top: 3px;
-            }
         }
     }
 }
@@ -183,7 +198,7 @@ transition: all .5s;
         a{
             display: block;
             background: #F08E8B;
-            color: #fff;
+            color: #504B46;
             font-size: 18px;
             line-height: 35px;
             padding: 30px 7.5px;

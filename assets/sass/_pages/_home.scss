@@ -1702,14 +1702,15 @@
     @media (max-width: 767px){
         padding-bottom: 30px;
         .el{
+            &__title{
+                text-align: center;
+            }
             &__excerpt {
                 min-height: auto;
                 margin-bottom: 15px;
             }
             &__col{
                 position: relative;
-                
-                
                 &:not(:last-child){
                     margin-bottom: 30px;
                     &::after{

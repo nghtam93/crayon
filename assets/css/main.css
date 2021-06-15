@@ -1789,6 +1789,10 @@ body.show-menu {
       top: 6px;
       width: 40px;
       height: 44px; }
+  .footer .el__sub {
+    font-size: 18px;
+    line-height: 35px;
+    margin-bottom: 10px; }
   .footer .el__tel {
     font-size: 30px;
     line-height: 52px;
@@ -1857,15 +1861,32 @@ body.show-menu {
       padding: 40px 0 40px;
       font-size: 14px;
       line-height: normal; }
+      .footer .el__box {
+        text-align: center; }
+      .footer .el__title {
+        font-size: 24px;
+        line-height: normal;
+        margin-bottom: 10px; }
+        .footer .el__title img {
+          width: 25px;
+          height: 27px;
+          margin-right: 10px;
+          position: relative;
+          top: 3px; }
       .footer .el__tel {
+        font-size: 28px;
+        line-height: 49px;
+        margin-bottom: 5px;
         color: #D45768; }
+      .footer .el__sub {
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 0; }
       .footer__map {
         margin: 0 -15px; }
       .footer__socical {
         margin-top: 30px;
         margin-bottom: 0; }
-      .footer .el__box {
-        text-align: center; }
       .footer .container-sm {
         padding-right: 15px;
         padding-left: 15px; }
@@ -1876,15 +1897,7 @@ body.show-menu {
         padding-right: 15px;
         padding-left: 15px; }
       .footer__copyright {
-        padding-bottom: 120px; }
-      .footer .el__title {
-        font-size: 24px; }
-        .footer .el__title img {
-          width: 25px;
-          height: 27px;
-          margin-right: 10px;
-          position: relative;
-          top: 3px; } }
+        padding-bottom: 120px; } }
 
 /*back to top*/
 .back__to--top {
@@ -1919,7 +1932,7 @@ body.show-menu {
   .button__fix__pc a {
     display: block;
     background: #F08E8B;
-    color: #fff;
+    color: #504B46;
     font-size: 18px;
     line-height: 35px;
     padding: 30px 7.5px;
@@ -3241,6 +3254,8 @@ body.show-menu {
   @media (max-width: 767px) {
     .home-3box {
       padding-bottom: 30px; }
+      .home-3box .el__title {
+        text-align: center; }
       .home-3box .el__excerpt {
         min-height: auto;
         margin-bottom: 15px; }
