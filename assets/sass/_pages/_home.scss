@@ -254,6 +254,9 @@
     
 }
 
+.schedule{
+    overflow: hidden;
+}
 .table-schedule {
     width: 100%;
     border-collapse: collapse;
@@ -352,9 +355,9 @@
             line-height: normal;
             padding: 60px 50px;
             text-align: center;
-            
-                margin-bottom: 30px;
-                img{
+            width: 100%;
+            margin-bottom: 30px;
+            img{
                 margin: 20px auto ;
             }
             &.-mask1{
