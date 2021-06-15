@@ -3693,7 +3693,7 @@ body.show-menu {
       font-family: 'TsukuAVintageMinLPro-R'; }
   .access__info .el__box {
     position: relative;
-    padding: 60px 90px;
+    padding: 60px 85px 40px;
     background-image: url(../../assets/img/access__info-bg.png);
     background-repeat: no-repeat;
     background-position: center;
