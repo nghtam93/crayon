@@ -1983,6 +1983,10 @@ body.show-menu {
 
 .header-wellcome {
   font-size: 13px; }
+  .header-wellcome h1 {
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 0; }
   @media (max-width: 575px) {
     .header-wellcome {
       font-size: 12px;
@@ -2242,8 +2246,11 @@ body.show-menu {
     background-repeat: no-repeat; }
 .home-noteopen .el__title {
   font-size: 30px;
+  line-height: normal;
   color: #504B46;
-  font-family: 'TsukuAVintageMinLPro-R'; }
+  font-family: 'TsukuAVintageMinLPro-R';
+  margin-bottom: 0;
+  font-weight: 400; }
 .home-noteopen .el__sub {
   font-size: 38px;
   color: #504B46;
@@ -2269,6 +2276,7 @@ body.show-menu {
 .banner-btn {
   padding: 50px 0 35px; }
   .banner-btn .el__item {
+    display: block;
     background-image: url(../../assets/img/banner-btn-border.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -2279,7 +2287,10 @@ body.show-menu {
     color: #504B46;
     text-align: center;
     padding: 35px 15px;
-    line-height: normal; }
+    line-height: normal;
+    transition: all .4s; }
+    .banner-btn .el__item:hover {
+      box-shadow: 0px 2px 5px #65605c; }
   @media (max-width: 767px) {
     .banner-btn {
       padding: 30px 0 15px; }
@@ -2345,7 +2356,9 @@ body.show-menu {
     font-size: 30px;
     line-height: normal;
     color: #504B46;
-    font-family: 'TsukuAVintageMinLPro-R'; }
+    font-family: 'TsukuAVintageMinLPro-R';
+    margin-bottom: 0;
+    font-weight: 400; }
   .home-info .el__header__sub {
     font-size: 30px;
     line-height: normal;
@@ -2478,11 +2491,14 @@ body.show-menu {
     font-size: 25px;
     line-height: normal;
     color: #504B46;
-    font-family: 'TsukuAVintageMinLPro-R'; }
+    font-family: 'TsukuAVintageMinLPro-R';
+    margin-bottom: 0;
+    font-weight: 400; }
   .home-contact .el__title {
     font-size: 25px;
     line-height: normal;
     color: #504B46;
+    font-weight: 400;
     margin-bottom: 10px;
     font-family: 'TsukuAVintageMinLPro-R'; }
   .home-contact .el__tel {
@@ -2591,7 +2607,9 @@ body.show-menu {
       font-size: 50px;
       line-height: normal;
       letter-spacing: 20px;
-      font-family: 'TsukuAVintageMinLPro-R'; }
+      font-family: 'TsukuAVintageMinLPro-R';
+      font-weight: 400;
+      margin-bottom: 0; }
       .home-medical .el__header__title span {
         position: relative;
         color: #D45768; }
@@ -2610,6 +2628,7 @@ body.show-menu {
   .home-medical .el__title {
     font-size: 33px;
     line-height: normal;
+    font-weight: 400;
     margin-bottom: 30px;
     font-family: 'TsukuAVintageMinLPro-R'; }
   .home-medical .el__thumb {
@@ -2655,14 +2674,18 @@ body.show-menu {
 .home-greeting {
   padding: 100px 0;
   overflow: hidden; }
-  .home-greeting .el__position {
+  .home-greeting .el__user__position {
     font-size: 20px;
-    line-height: 35px; }
-  .home-greeting .el__name {
-    font-size: 14px; }
-  .home-greeting .el__address {
+    font-weight: 400;
+    line-height: 35px;
+    margin-bottom: 15px; }
+  .home-greeting .el__user ruby {
     font-size: 26px;
+    line-height: normal;
     margin-bottom: 30px; }
+  .home-greeting .el__user rt {
+    font-size: 14px;
+    line-height: normal; }
   .home-greeting .el__header {
     position: relative;
     max-width: 1020px;
@@ -2688,18 +2711,26 @@ body.show-menu {
       font-size: 44px;
       line-height: 77px;
       padding: 125px 0 60px 205px;
-      font-family: 'TsukuAVintageMinLPro-R'; }
+      font-family: 'TsukuAVintageMinLPro-R';
+      font-weight: 400;
+      margin-bottom: 0; }
   .home-greeting .el__title {
     font-size: 33px;
     line-height: 54px;
+    font-weight: 400;
     margin-bottom: 30px;
     font-family: 'TsukuAVintageMinLPro-R'; }
   .home-greeting .el__excerpt {
     margin-bottom: 50px; }
+  .home-greeting .el__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    margin-bottom: 0; }
   .home-greeting .el__line {
     width: 100%;
     height: 17px;
-    margin: 15px 0;
+    margin: 0 0 15px;
     background-image: url(../../assets/img/home-greeting-line.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -2780,6 +2811,8 @@ body.show-menu {
         z-index: -1; }
     .home-featured .el__header__title {
       font-size: 44px;
+      font-weight: 400;
+      margin-bottom: 0;
       line-height: normal;
       letter-spacing: 9px;
       font-family: 'TsukuAVintageMinLPro-R'; }
@@ -2794,6 +2827,7 @@ body.show-menu {
     margin-bottom: 30px; }
   .home-featured .el__title {
     font-size: 30px;
+    font-weight: 400;
     line-height: 52px;
     margin-bottom: 0; }
   .home-featured .el__number {
@@ -2914,6 +2948,8 @@ body.show-menu {
         z-index: -1; }
     .home-service .el__header__title {
       font-size: 44px;
+      font-weight: 400;
+      margin-bottom: 0;
       letter-spacing: 6px;
       line-height: normal;
       font-family: 'TsukuAVintageMinLPro-R'; }
@@ -2999,7 +3035,9 @@ body.show-menu {
       font-size: 44px;
       letter-spacing: 9px;
       line-height: normal;
-      font-family: 'TsukuAVintageMinLPro-R'; }
+      font-family: 'TsukuAVintageMinLPro-R';
+      font-weight: 400;
+      margin-bottom: 0; }
     .home-clinic .el__header__sub {
       font-size: 35px;
       line-height: normal;
@@ -3102,6 +3140,8 @@ body.show-menu {
       font-family: 'KaufmannStd-Bold'; }
   .home-visitus .el__title {
     font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 0;
     line-height: 43px;
     color: #504B46;
     font-family: 'TsukuAVintageMinLPro-R'; }
@@ -3286,6 +3326,7 @@ body.show-menu {
     padding: 15px 40px; }
   .home-3box .el__title {
     font-size: 20px;
+    font-weight: 400;
     line-height: 35px;
     color: #504B46;
     margin-bottom: 15px;
@@ -3598,7 +3639,9 @@ body.show-menu {
     max-width: 200px;
     margin-right: 30px;
     font-size: 24px;
-    line-height: 42px; }
+    font-weight: 400;
+    line-height: 42px;
+    margin-bottom: 0; }
   .access__trans .el__sub {
     font-size: 16px;
     line-height: 35px; }
@@ -3903,6 +3946,8 @@ body.show-menu {
     line-height: 70px;
     text-align: center;
     font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 0;
     color: #504B46;
     background-image: url(../../assets/img/slider__text.png);
     background-repeat: no-repeat;
@@ -3972,6 +4017,7 @@ body.show-menu {
     margin-bottom: 20px; }
   .clinic__foreign .el__title {
     font-size: 33px;
+    font-weight: 400;
     line-height: 57px;
     color: #504B46;
     text-align: center;
@@ -4058,6 +4104,7 @@ body.show-menu {
       background-size: 100% 100%; }
   .clinic__intro2 .el__title {
     font-size: 25px;
+    font-weight: 400;
     line-height: 43px;
     color: #504B46;
     margin-bottom: 0;
@@ -4098,6 +4145,7 @@ body.show-menu {
     margin-bottom: 30px; }
   .clinic__3box .el__title {
     font-size: 23px;
+    font-weight: 400;
     line-height: 35px;
     color: #D45769;
     margin-bottom: 10px;
@@ -4273,6 +4321,7 @@ body.show-menu {
     align-items: start; }
   .service__caries .el__title {
     font-size: 28px;
+    font-weight: 400;
     line-height: 49px;
     color: #504B46;
     margin-bottom: 0; }
@@ -4381,6 +4430,7 @@ body.show-menu {
     padding: 40px 50px 10px; }
   .service__cariesbox .el__title {
     font-size: 21px;
+    font-weight: 400;
     line-height: 43px;
     color: #504B46;
     text-align: center;
@@ -4531,16 +4581,21 @@ body.show-menu {
       max-width: 360px;
       margin-right: 70px;
       margin-bottom: 30px; }
-  .staff__director .el__position {
+  .staff__director .el__user__position {
     font-size: 20px;
-    line-height: 35px; }
-  .staff__director .el__name {
-    font-size: 14px; }
-  .staff__director .el__address {
+    font-weight: 400;
+    line-height: 35px;
+    margin-bottom: 15px; }
+  .staff__director .el__user ruby {
     font-size: 26px;
+    line-height: normal;
     margin-bottom: 30px; }
+  .staff__director .el__user rt {
+    font-size: 14px;
+    line-height: normal; }
   .staff__director .el__title {
     font-size: 29px;
+    font-weight: 400;
     line-height: 50px;
     color: #504B46;
     margin-bottom: 40px;
@@ -4625,6 +4680,8 @@ body.show-menu {
     font-size: 16px;
     line-height: 28px;
     margin-bottom: 30px; }
+    .staff__profile .el__item ul {
+      margin-bottom: 0; }
   .staff__profile .el__title {
     background-image: url(../../assets/img/service__profile-title-1.png);
     background-repeat: no-repeat;
@@ -4710,9 +4767,15 @@ body.show-menu {
     margin-bottom: 20px; }
     .staff__doctor .el__info__position {
       font-size: 20px;
+      font-weight: 400;
       line-height: 35px;
       margin-right: 30px;
+      margin-bottom: 0;
       display: inline-block; }
+    .staff__doctor .el__info ruby {
+      font-size: 26px; }
+    .staff__doctor .el__info rt {
+      font-size: 14px; }
     .staff__doctor .el__info__wrap {
       display: inline-block; }
     .staff__doctor .el__info__name {
@@ -4722,6 +4785,7 @@ body.show-menu {
       font-size: 26px; }
   .staff__doctor .el__title {
     font-size: 26px;
+    font-weight: 400;
     line-height: 45px;
     color: #504B46;
     margin-bottom: 20px;
@@ -4774,7 +4838,7 @@ body.show-menu {
     margin-bottom: 0; }
   .staff__doctor .el__li {
     position: relative; }
-    .staff__doctor .el__li + li::before {
+    .staff__doctor .el__li + .el__li::before {
       content: "";
       background-image: url(../../assets/img/access__trans-border.png);
       background-repeat: repeat-x;
@@ -4807,8 +4871,10 @@ body.show-menu {
     line-height: 100px;
     text-align: center;
     font-size: 20px;
+    font-weight: 400;
     font-family: 'TsukuAVintageMinLPro-R';
     margin-right: 30px;
+    margin-bottom: 0;
     background-image: url(../../assets/img/service__profile-title-1.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -4819,7 +4885,8 @@ body.show-menu {
       max-width: 54px; }
   .staff__doctor .el__sub {
     font-size: 16px;
-    line-height: 28px; }
+    line-height: 28px;
+    margin-bottom: 0; }
   @media (max-width: 991px) {
     .staff__doctor {
       padding-top: 50px; }
@@ -4900,12 +4967,12 @@ body.show-menu {
     margin-bottom: 20px; }
     .staff__staff .el__info__position {
       font-size: 20px;
+      font-weight: 400;
       line-height: 35px; }
-    .staff__staff .el__info__name {
-      font-size: 14px;
-      line-height: normal; }
-    .staff__staff .el__info__address {
+    .staff__staff .el__info ruby {
       font-size: 26px; }
+    .staff__staff .el__info rt {
+      font-size: 14px; }
   .staff__staff .el__sub {
     margin-bottom: 30px;
     font-size: 16px;
@@ -4936,6 +5003,11 @@ body.show-menu {
   .staff__staff .el__excerpt {
     position: relative;
     margin-bottom: 15px; }
+    .staff__staff .el__excerpt h4 {
+      font-weight: 400;
+      margin-bottom: 0; }
+    .staff__staff .el__excerpt ul {
+      margin-bottom: 0; }
   @media (max-width: 575px) {
     .staff__staff .el__header__title {
       font-size: 25px;
@@ -4953,6 +5025,7 @@ body.show-menu {
     margin-bottom: 50px; }
     .staff__about .el__header__title {
       font-size: 16px;
+      font-weight: 400;
       line-height: 35px;
       margin-bottom: 0; }
   .staff__about .el__thumb {
