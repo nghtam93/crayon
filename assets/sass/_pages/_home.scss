@@ -195,7 +195,7 @@
     margin-bottom: 50px;
     &__meta{
         font-size: 18px;
-        line-height: 35px;
+        line-height: 1.8;
     }
     &__title{
         font-size: 35px;
@@ -448,6 +448,9 @@
     }
     @media (max-width: 575px){
         padding: 15px 0 0;
+        &.-st2 {
+            padding: 100px 0 50px;
+        }
     }
 }
 
@@ -559,7 +562,7 @@
            border-bottom: 1px solid #504B46;
            padding: 15px 0;
            font-size: 16px;
-           line-height: 35px;
+           line-height: 1.8;
            color: #504B46;
            &__title{
             @include flex-col(170px);
@@ -954,7 +957,7 @@
             &__position{
                 font-size: 20px;
                 font-weight: 400;
-                line-height: 35px; 
+                line-height: 1.8; 
                 margin-bottom: 15px;
             }
             ruby{
@@ -967,17 +970,6 @@
                 line-height: normal;
             }
         }
-        // &__position{
-        //     font-size: 20px;
-        //     line-height: 35px;
-        // }
-        // &__name{
-        //     font-size: 14px;
-        // }
-        // &__address{
-        //     font-size: 26px;
-        //     margin-bottom: 30px;
-        // }
         &__header{
             position: relative;
             max-width: 1020px;
@@ -1019,11 +1011,12 @@
         }
         &__excerpt{
             margin-bottom: 50px;
+            line-height: 1.8;
         }
         &__text{
             font-size: 20px;
             font-weight: 400;
-            line-height: 35px;
+            line-height: 1.8;
             margin-bottom: 0;
         }
         &__line{
@@ -1071,7 +1064,7 @@
                 }
             }
             &__excerpt {
-                margin-bottom: 50px;
+                font-size: 15px;
             }
         }
        
@@ -1235,10 +1228,18 @@
                 max-height: 60px;
             }
         }
+        .el__top{
+            margin-bottom: 20px;
+        }
         .el__thumb {
             max-width: 100%;
             margin-right: auto;
             padding-top: 66%;
+            margin-bottom: 20px;
+        }
+        .el__meta {
+            font-size: 15px;
+            line-height: 26px;
         }
     }
     @media (max-width: 575px){
@@ -1254,6 +1255,7 @@
         }
         .el__title {
             font-size: 18px;
+            line-height: 28px;
         }
         .el__number {
             @include flex-col(45px);
@@ -1283,6 +1285,7 @@
     ul{
         list-style: none;
         padding-left: 0;
+        margin-bottom: 0;
         li{
            &:nth-child(2n){
             .el__title{
@@ -1375,10 +1378,18 @@
     @media (max-width: 991px){
         padding: 120px 0 80px;
     }
+    @media (max-width: 767px){
+        ul {
+            --bs-gutter-x: 1rem;
+        }
+        .el__title{
+            font-size:13px;
+        }
+    }
     @media (max-width: 575px){
         .el__item {
             font-size: 14px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         .el__header__wrap:before {
             top: -40px;
@@ -1452,7 +1463,7 @@
             text-align: center;
             margin-bottom: 30px;
             font-size: 23px;
-            line-height: 35px;
+            line-height: 1.8;
             color: #504B46;
         }
         &__thumb{
@@ -1485,6 +1496,19 @@
             }
         }
     }
+    @media (max-width: 767px){
+        .el__item {
+            // margin-bottom: 30px;
+        }
+        .el__thumb{
+            margin-bottom: 10px;
+            &:after {
+                top: -8px;
+                left: -8px;
+            }
+        }
+
+    }
     @media (max-width: 575px){
         .el__header {
             margin-bottom: 50px;
@@ -1504,7 +1528,6 @@
         .el__item {
             font-size: 14px;
             line-height: normal;
-            margin-bottom: 15px;
         }
     }
 }
@@ -1807,7 +1830,7 @@
         &__title{
             font-size: 20px;
             font-weight: 400;
-            line-height: 35px;
+            line-height: 1.8;
             color: #504B46;
             margin-bottom: 15px;
             font-family: 'TsukuAVintageMinLPro-R';

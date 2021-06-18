@@ -25,19 +25,13 @@
         }
     }
     @media (max-width: 767px){
-        .el{
-            &__header {
-                &__title{
-                    font-size: 30px;
-                }
-            }
-        }
-    }
-    @media (max-width: 767px){
-        padding: 120px 0 120px;
+        padding: 80px 0 60px;
         .el{
             &__header {
                 margin-bottom: 40px;
+                &__title{
+                    font-size: 30px;
+                }
             }
         }
     }
@@ -105,7 +99,7 @@
             &__position{
                 font-size: 20px;
                 font-weight: 400;
-                line-height: 35px; 
+                line-height: 1.8; 
                 margin-bottom: 15px;
             }
             ruby{
@@ -169,7 +163,7 @@
         }
     }
     @media (max-width: 767px){
-        margin-top: 100px;
+        margin-top: 0;
         .el{
             &__header{
                 margin-bottom: 60px;
@@ -338,7 +332,7 @@
             &__position{
                 font-size: 20px;
                 font-weight: 400;
-                line-height: 35px;
+                line-height: 1.8;
                 margin-right: 30px;
                 margin-bottom: 0;
                 display: inline-block;
@@ -391,7 +385,7 @@
         }
         &__excerpt{
             font-size: 16px;
-            line-height: 35px;
+            line-height: 1.8;
             margin-bottom: 30px;
         }
         &__line{
@@ -515,6 +509,9 @@
     }
     @media (max-width: 479px){
         .el{
+            &__icon{
+                margin: auto!important;
+            }
             &__li__wrap{
                 display: block;
             }
@@ -589,7 +586,7 @@
             &__position{
                 font-size: 20px;
                 font-weight: 400;
-                line-height: 35px;
+                line-height: 1.8;
             }
             ruby{
                 font-size: 26px;
@@ -632,6 +629,7 @@
 
         &__excerpt{
             position: relative;
+            margin-top: 15px;
             margin-bottom: 15px;
         
             h4{
@@ -649,6 +647,27 @@
                 &__title{
                     font-size: 25px;
                     line-height: normal;
+                }
+            }
+            &__excerpt {
+                h4{
+                    width: 100px;
+                    height: 100px;
+                    line-height: 100px;
+                    text-align: center;
+                    font-size: 20px;
+                    font-weight: 400;
+                    font-family: 'TsukuAVintageMinLPro-R';
+                    margin-right: 30px;
+                    margin-bottom: 0;
+                    background-image: url(../../assets/img/service__profile-title-1.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                
+                    &.-st2{
+                        background-image: url(../../assets/img/service__profile-title-2.png);
+                    }
                 }
             }
         }
@@ -669,7 +688,7 @@
             &__title{
                 font-size: 16px;
                 font-weight: 400;
-                line-height: 35px;
+                line-height: 1.8;
                 margin-bottom: 0;
             }
         }

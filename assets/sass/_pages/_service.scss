@@ -181,7 +181,7 @@
             position: relative;
             display: inline-block;
             font-size: 20px;
-            line-height: 35px;
+            line-height: 1.8;
             padding: 4px 15px;
             margin-left: 30px;
             background-image: url(../../assets/img/service-badge-1.png);
@@ -265,12 +265,30 @@
     }
     @media (max-width: 767px){
         padding-top: 30px;
+        
         .el{
             &__thumb{
                 @include flex-col(100%);
                 margin: 0 15px 30px;
             }
+            &__badge {
+                font-size: 16px;
+                line-height: 1.8;
+                padding: 2px 10px;
+                margin-left: 0px;
+                &::after {
+                    top: 7px;
+                    right: -15px;
+                    width: 30px;
+                    height: 32px;
+                }
+            }
+            &__excerpt {
+                font-size: 15px;
+                line-height: 1.8;
+            }
         }
+        
     }
     @media (max-width: 575px){
         
@@ -280,7 +298,7 @@
                 line-height: normal;
             }
             &__title{
-                font-size: 28px;
+                font-size: 25px;
                 line-height: normal;
             }
         }
@@ -342,6 +360,10 @@
             &__thumb{
                 @include flex-col(100%);
                 margin: 0 auto 15px;
+            }
+            &__excerpt {
+                font-size: 15px;
+                line-height: 1.8;
             }
         }
     }
