@@ -2634,6 +2634,8 @@ body.show-menu {
     font-weight: 400;
     margin-bottom: 30px;
     font-family: 'TsukuAVintageMinLPro-R'; }
+  .home-medical .el__excerpt {
+    line-height: 1.8; }
   .home-medical .el__thumb {
     padding-top: 64%;
     margin-bottom: 30px; }
@@ -4030,9 +4032,9 @@ body.show-menu {
     right: 0; } }
 @media (max-width: 767px) {
   .clinic__slider-nav__wrapper {
-    padding: 40px 0 40px; }
+    padding: 30px 0; }
   .clinic__slider-nav .slick-dots {
-    bottom: -40px; } }
+    bottom: -35px; } }
 @media (max-width: 575px) {
   .clinic__slider-for {
     margin-bottom: 30px; }
@@ -4108,7 +4110,7 @@ body.show-menu {
       padding: 50px 15px; }
     .clinic__foreign .el__title {
       font-size: 28px;
-      line-height: normal; } }
+      line-height: 1.3; } }
 
 .clinic__intro2 {
   padding-bottom: 50px; }
@@ -4701,10 +4703,16 @@ body.show-menu {
       margin-top: 0; }
       .staff__director .el__header {
         margin-bottom: 60px; }
+        .staff__director .el__header__title {
+          font-size: 28px;
+          line-height: 1.8; }
       .staff__director .el__item--left {
         margin: 0 auto 30px; }
       .staff__director .el__title {
         font-size: 22px; } }
+  @media (max-width: 575px) {
+    .staff__director {
+      padding-bottom: 0; } }
 
 .staff__profile {
   padding: 40px 40px 80px; }
@@ -4781,7 +4789,7 @@ body.show-menu {
       height: 76px; } }
   @media (max-width: 575px) {
     .staff__profile {
-      padding: 40px 0 40px; }
+      padding: 40px 0 0px; }
       .staff__profile .el__box {
         background: #fff;
         padding: 30px 15px; }
@@ -4969,7 +4977,7 @@ body.show-menu {
         text-align: center; } }
   @media (max-width: 575px) {
     .staff__doctor .el__header__title {
-      font-size: 25px;
+      font-size: 28px;
       line-height: normal; }
     .staff__doctor .el__title {
       font-size: 22px;

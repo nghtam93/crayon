@@ -167,6 +167,12 @@
         .el{
             &__header{
                 margin-bottom: 60px;
+
+                &__title {
+                    font-size: 28px;
+                    line-height: 1.8;
+                }
+
             }
             &__item--left{
                 margin: 0 auto 30px
@@ -176,7 +182,9 @@
             }
         }
     }
-    
+    @media (max-width: 575px){
+        padding-bottom: 0;
+    }
 }
 
 .staff__profile{
@@ -272,7 +280,7 @@
     }
 
     @media (max-width: 575px){
-        padding: 40px 0 40px;
+        padding: 40px 0 0px;
         .el__box{
             background:#fff;
             padding: 30px 15px;
@@ -497,7 +505,7 @@
         .el{
             &__header{
                 &__title{
-                    font-size: 25px;
+                    font-size: 28px;
                     line-height: normal;
                 }
             }
