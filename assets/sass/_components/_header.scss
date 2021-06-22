@@ -2,6 +2,7 @@
     padding: 10px 0px;
     &--mb{
         display: none;
+        background-color: #fff;
     }
     &-mb__text{
         font-size: 17px;
@@ -16,6 +17,14 @@
     @media (max-width: 991px) {
         &--mb{
             display: block;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+
+            &.fixed-header{
+                box-shadow: 0px 2px 5px #ccc;
+            }
+            
         }
         &__wrap {
             display: flex;

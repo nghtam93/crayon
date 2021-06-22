@@ -272,8 +272,8 @@
 
     }
     @media (max-width: 767px){
+        
         &:before{
-            // background-image: url(../../assets/img/Untitled-1-mb.png);
             background-size: 180% 100%;
         }
         .el__meta {
@@ -284,6 +284,9 @@
         }
 
         .el{
+            &__text {
+                letter-spacing: 3px;
+            }
             &__item{
                 &__wrap{
                     max-width: calc(100% - 50px);
@@ -464,8 +467,11 @@
     .container {
         max-width: 1200px;
     }
-
 }
+@media (max-width: 992px){
+    .sticky-wrapper{display: none;}
+}
+
 
 .home-intro{
     margin-bottom: 50px;
@@ -1338,7 +1344,10 @@
             max-width: 550px;
             height: 550px;
             padding-top: 0;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+        }
+        .el__user{
+            margin-bottom: 20px;
         }
         .el__title {
             text-align: center;

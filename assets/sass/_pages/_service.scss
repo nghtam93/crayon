@@ -372,7 +372,7 @@
                 padding: 40px 30px 10px;
             }
             &__title{
-                font-size: 28px;
+                font-size: 22px;
                 line-height: normal;
             }
         }
@@ -410,6 +410,11 @@
             &__excerpt{
                 margin-bottom: 80px;
             }
+        }
+    }
+    @media (max-width: 767px){
+        .el__header__excerpt {
+            margin-bottom: 30px;
         }
     }
     @media (max-width: 575px){

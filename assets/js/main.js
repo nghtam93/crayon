@@ -43,6 +43,20 @@ function open_under(elem) {
 }
 
 
+function header_fixed() {
+    lastScroll = 0;
+    $(window).on('scroll', function() {
+        var scroll = $(window).scrollTop();
+        let $header = $(".header--mb")
+        if (scroll > 1) {
+            $header.addClass("fixed-header");
+        } else {
+            $header.removeClass("fixed-header");
+        }
+    });
+}
+
+
 // Sticky navbar
 // =========================
 $(document).ready(function () {
@@ -70,7 +84,6 @@ $(document).ready(function () {
         });
 
         // On page load
-
         stickyToggle(sticky, stickyWrapper, $(window),stickyHeight);
     });
 });
@@ -78,6 +91,9 @@ $(document).ready(function () {
 
 // Page Scroll
 $(document).ready(function () {
+
+    header_fixed() 
+
     //smoothscroll
     $('.service__nav a[href^="#"]').on('click', function (e) {
         e.preventDefault();
