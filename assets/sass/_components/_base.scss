@@ -22,15 +22,17 @@ p {
     margin-top: 0;
     margin-bottom: 0;
 }
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
 ul{
     list-style: none;
     padding-left: 0;
     margin-bottom: 0;
 }
-dl, ol, ul {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
+
 img {
     max-width: 100%;
     height: auto;
