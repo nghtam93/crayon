@@ -4048,13 +4048,14 @@ body.show-menu {
   .access__details .el__box {
     position: relative; }
   .access__details .el__item {
-    padding: 20px 60px; }
+    padding: 20px 20px; }
     .access__details .el__item--left {
       -webkit-box-flex: 0;
-      -ms-flex: 0 0 120px;
-      flex: 0 0 120px;
-      max-width: 120px;
-      margin-right: 20px; }
+      -ms-flex: 0 0 160px;
+      flex: 0 0 160px;
+      max-width: 160px;
+      margin-right: 20px;
+      text-align: center; }
     .access__details .el__item--right {
       flex-grow: 1; }
     .access__details .el__item.-st1 {
