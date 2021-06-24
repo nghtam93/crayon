@@ -90,9 +90,19 @@ $(document).ready(function () {
 
 
 // Page Scroll
-$(document).ready(function () {
+$(document).ready(function (e) {
 
     header_fixed() 
+
+    if(window.location.hash){
+        $(document).off("scroll");
+        var target = window.location.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - 50
+        });
+    }
 
     //smoothscroll
     $('.service__nav a[href^="#"]').on('click', function (e) {
