@@ -2872,6 +2872,8 @@ body.show-menu {
       .home-medical .el__thumb {
         margin-left: 20px; } }
   @media (max-width: 991px) {
+    .home-medical .el__thumb {
+      margin: 0 auto 30px; }
     .home-medical .el__title {
       text-align: center; } }
   @media (max-width: 767px) {
@@ -2976,17 +2978,38 @@ body.show-menu {
   .home-greeting .el__clgt {
     margin-bottom: 30px; }
   .home-greeting .el__thumb {
-    max-width: 590px;
-    padding-top: 93%;
+    position: relative;
+    max-width: 520px;
     margin: 0 auto 40px; }
+    .home-greeting .el__thumb .dnfix__thumb {
+      padding-top: 100%; }
+    .home-greeting .el__thumb:before {
+      content: "";
+      background-image: url(../../assets/img/greeting-img-border.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: calc(100% + 45px);
+      height: calc(100% + 40px);
+      position: absolute;
+      top: -23px;
+      left: -40px;
+      z-index: 1; }
+    .home-greeting .el__thumb img {
+      -webkit-mask-size: 100% 100%;
+      mask-size: 100% 100%;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-image: url(../../assets/img/greeting-img-mask.png);
+      mask-image: url(../../assets/img/greeting-img-mask.png); }
+  @media (max-width: 1299px) {
+    .home-greeting .el__thumb {
+      margin: 0 50px 40px; } }
   @media (max-width: 991px) {
     .home-greeting {
       padding: 0 0 50px; }
       .home-greeting .el__thumb {
-        max-width: 550px;
-        height: 550px;
-        padding-top: 0;
-        margin-bottom: 20px; }
+        margin: 0 auto 40px; }
       .home-greeting .el__user {
         margin-bottom: 20px; }
       .home-greeting .el__title {
@@ -3001,15 +3024,15 @@ body.show-menu {
         height: 160px; }
       .home-greeting .el__excerpt {
         font-size: 15px; } }
+  @media (max-width: 620px) {
+    .home-greeting .el__thumb {
+      margin: 0 50px 40px; } }
   @media (max-width: 575px) {
     .home-greeting .el__header {
       margin: 0 auto 0; }
       .home-greeting .el__header__title {
-        padding: 45px 0 0 22px;
+        padding: 0 10px 40px 40px;
         font-size: 28px; }
-    .home-greeting .el__thumb {
-      height: auto;
-      padding-top: 100%; }
     .home-greeting .el__position {
       font-size: 16px; }
     .home-greeting .el__name {
@@ -3081,10 +3104,37 @@ body.show-menu {
     .home-featured .el__number img {
       max-height: 83px; }
   .home-featured .el__thumb {
+    position: relative;
     max-width: 730px;
     margin-left: auto;
-    margin-bottom: 15px;
-    padding-top: 64%; }
+    margin-bottom: 15px; }
+    .home-featured .el__thumb .dnfix__thumb {
+      padding-top: 66%; }
+    .home-featured .el__thumb:before {
+      content: "";
+      background-image: url(../../assets/img/featured-border-1.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: calc(100% + 5px);
+      height: calc(100% + 10px);
+      position: absolute;
+      top: 0;
+      left: -15px;
+      z-index: 1; }
+    .home-featured .el__thumb img {
+      -webkit-mask-size: 100% 100%;
+      mask-size: 100% 100%;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-image: url(../../assets/img/featured-mask.png);
+      mask-image: url(../../assets/img/featured-mask.png); }
+    .home-featured .el__thumb.-st2:before {
+      background-image: url(../../assets/img/featured-border-2.png); }
+    .home-featured .el__thumb.-st3:before {
+      background-image: url(../../assets/img/featured-border-3.png); }
+    .home-featured .el__thumb.-st4:before {
+      background-image: url(../../assets/img/featured-border-4.png); }
   @media (max-width: 1599px) {
     .home-featured {
       padding: 100px 0 150px; }
@@ -3117,8 +3167,7 @@ body.show-menu {
       padding: 50px 0 40px; }
       .home-featured .el__thumb {
         max-width: 550px;
-        margin-right: auto;
-        padding-top: 50%; } }
+        margin-right: auto; } }
   @media (max-width: 767px) {
     .home-featured {
       background-image: url(../../assets/img/home-featured-mb-bg.png); }
@@ -3133,8 +3182,9 @@ body.show-menu {
       .home-featured .el__thumb {
         max-width: 100%;
         margin-right: auto;
-        padding-top: 66%;
         margin-bottom: 20px; }
+        .home-featured .el__thumb:before {
+          left: -5px; }
       .home-featured .el__meta {
         font-size: 15px;
         line-height: 26px; } }

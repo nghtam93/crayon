@@ -11,9 +11,9 @@ $('.nav-mobile__list li .link').click(function() {
 $('.nav-mobile__list li .link').click(function() {
     $('body').removeClass('show-menu');
 });
-$('.show-sub').click(function(e) {
+$('.show-sub>a').click(function(e) {
     e.preventDefault()
-    $(this).toggleClass('active');
+    $(this).parent().toggleClass('active');
     $('.sub-menu').toggleClass('show');
 });
 /*----end header----*/

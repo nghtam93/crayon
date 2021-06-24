@@ -1194,6 +1194,10 @@
         }
     }
     @media (max-width: 991px){
+        .el__thumb {
+            margin: 0 auto 30px;
+        }
+
         .el__title {
             text-align: center;
         }
@@ -1333,18 +1337,47 @@
             margin-bottom: 30px;
         }
         &__thumb{
-            max-width: 590px;
-            padding-top: 93%;
+            position: relative;
+            max-width: 520px;
             margin: 0 auto 40px;
+            .dnfix__thumb{
+                
+                padding-top: 100%;
+            }
+
+            &:before{
+                content: "";
+                background-image: url(../../assets/img/greeting-img-border.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: calc(100% + 45px);
+                height: calc(100% + 40px);
+                position: absolute;
+                top: -23px;
+                left: -40px;
+                z-index: 1;
+            }
+            img{
+                -webkit-mask-size: 100% 100%;
+                mask-size: 100% 100%;
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+                -webkit-mask-image: url(../../assets/img/greeting-img-mask.png);
+                mask-image: url(../../assets/img/greeting-img-mask.png);
+            }
+            
+        }
+    }
+    @media (max-width: 1299px){
+        .el__thumb {
+            margin: 0 50px 40px;
         }
     }
     @media (max-width: 991px){
         padding: 0 0 50px;
         .el__thumb {
-            max-width: 550px;
-            height: 550px;
-            padding-top: 0;
-            margin-bottom: 20px;
+            margin: 0 auto 40px;
         }
         .el__user{
             margin-bottom: 20px;
@@ -1373,19 +1406,19 @@
         }
        
     }
+    @media (max-width: 620px){
+        .el__thumb {
+            margin: 0 50px 40px;
+        }
+    }
     @media (max-width: 575px){
         .el{
             &__header {
                 margin: 0 auto 0;
                 &__title {
-                    padding: 45px 0 0 22px;
+                    padding: 0 10px 40px 40px;
                     font-size: 28px;
                 }
-            }
-
-            &__thumb {
-                height: auto;
-                padding-top: 100%;
             }
             &__position {
                 font-size: 16px;
@@ -1476,10 +1509,51 @@
             }
         }
         &__thumb {
+            position : relative;
             max-width: 730px;
             margin-left: auto;
             margin-bottom: 15px;
-            padding-top: 64%;
+            
+            .dnfix__thumb{
+                padding-top: 66%;
+            }
+
+            &:before{
+                content: "";
+                background-image: url(../../assets/img/featured-border-1.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: calc(100% + 5px);
+                height: calc(100% + 10px);
+                position: absolute;
+                top: 0;
+                left: -15px;
+                z-index: 1;
+            }
+            img{
+                -webkit-mask-size: 100% 100%;
+                mask-size: 100% 100%;
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+                -webkit-mask-image: url(../../assets/img/featured-mask.png);
+                mask-image: url(../../assets/img/featured-mask.png);
+            }
+            &.-st2{
+                &:before{
+                    background-image: url(../../assets/img/featured-border-2.png);
+                }
+            }
+            &.-st3{
+                &:before{
+                    background-image: url(../../assets/img/featured-border-3.png);
+                }
+            }
+            &.-st4{
+                &:before{
+                    background-image: url(../../assets/img/featured-border-4.png);
+                }
+            }
         }
     }
     @media (max-width: 1599px){
@@ -1518,7 +1592,6 @@
         .el__thumb {
             max-width: 550px;
             margin-right: auto;
-            padding-top: 50%;
         }
     }
     @media (max-width: 767px){
@@ -1538,8 +1611,10 @@
         .el__thumb {
             max-width: 100%;
             margin-right: auto;
-            padding-top: 66%;
             margin-bottom: 20px;
+            &:before{
+                left: -5px;
+            }
         }
         .el__meta {
             font-size: 15px;
@@ -1547,6 +1622,8 @@
         }
     }
     @media (max-width: 575px){
+
+
         .el__header__wrap:before {
             width: 220px;
             height: 190px;
