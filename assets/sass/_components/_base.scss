@@ -241,6 +241,11 @@ img {
         display: none;
     }
 }
+@media (max-width: 767px){
+    br.-pc {
+        display: none;
+    }
+}
 /*Fix image trong khung*/
 .dnfix__thumb{position:relative;height:auto;width:100%;overflow:hidden;display:block;padding-top:68.075%;}
 .dnfix__thumb img{margin:0px auto;position:absolute;width:100%;height:100%;top:0;left:0;object-fit:cover}

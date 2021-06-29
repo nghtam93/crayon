@@ -1523,6 +1523,9 @@ img {
 
   br.-mb {
     display: none; } }
+@media (max-width: 767px) {
+  br.-pc {
+    display: none; } }
 /*Fix image trong khung*/
 .dnfix__thumb {
   position: relative;
@@ -2462,10 +2465,19 @@ body.show-menu {
   font-size: 20px;
   color: #504B46;
   margin-bottom: 20px; }
+  .home-noteopen .el__sub2 span {
+    margin-left: 20px; }
+@media (max-width: 991px) {
+  .home-noteopen .el__sub2 span {
+    display: block;
+    margin-left: 0; } }
 @media (max-width: 575px) {
   .home-noteopen .el__sub {
     font-size: 25px;
     margin-bottom: 15px; }
+  .home-noteopen .el__sub2 span {
+    display: block;
+    margin-left: 0; }
   .home-noteopen .el__title {
     font-size: 22px; }
   .home-noteopen .el__box {
@@ -4888,10 +4900,12 @@ body.show-menu {
         height: 15px;
         margin: auto; }
     .banner-btn.-st2 .el__header__excerpt {
-      margin-bottom: 80px; }
+      margin-bottom: 80px;
+      text-align: center; }
   @media (max-width: 767px) {
     .banner-btn.-st2 .el__header__excerpt {
-      margin-bottom: 30px; } }
+      margin-bottom: 30px;
+      text-align: left; } }
   @media (max-width: 575px) {
     .banner-btn.-st2 .el__header__title {
       font-size: 28px;
