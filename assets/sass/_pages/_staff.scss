@@ -32,15 +32,15 @@
                 &__title{
                     font-size: 30px;
                 }
+                &__excerpt {
+                    text-align: center;
+                }
             }
         }
     }
     @media (max-width: 575px){
         .el{
             &__header{
-
-                
-
                 &__title{
                     font-size: 25px;
                     line-height: 1.4;
