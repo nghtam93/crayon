@@ -1078,6 +1078,7 @@
 
 .home-calendar{
     margin-bottom: 60px;
+    
     .el{
         &__header{
             margin-bottom: 20px;
@@ -1101,8 +1102,6 @@
                     left: 0;;
                 }
             }
-           
-           
             &__title{
                font-size: 24px;
                line-height: normal;
@@ -1117,6 +1116,13 @@
             }
         }
     }
+    @media (min-width: 768px){
+        padding: 50px 0;
+        .el__header {
+            margin-bottom: 60px;
+        }
+    }
+
 }
 
 .home-medical{
@@ -1673,12 +1679,29 @@
 }
 
 .home-service{
-    background-image: url(../../assets/img/home-service-bg.png);
+    position: relative;
+    // background-image: url(../../assets/img/home-service-bg.png);
     padding: 250px 0 160px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
-    
+    .container{
+        position: relative;
+        z-index:1;
+    }
+    &:before{
+        content:"";
+        background-image: url(../../assets/img/home-service-bg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
     ul{
         list-style: none;
         padding-left: 0;
@@ -1770,12 +1793,30 @@
     }
     @media (max-width: 1499px){
         background-size: cover;
+        &:before{
+            background-size: cover;
+        }
+
     }
 
     @media (max-width: 991px){
         padding: 120px 0 80px;
     }
     @media (max-width: 767px){
+        &:before{
+            background-image: url(../../assets/img/home-service-bg2.png);
+        }
+        &:after{
+            content: "";
+            background: url(../../assets/img/home-service-bg-mb.png);
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            height: calc(100% + 200px);
+            background-size: cover;
+        }
+        
         ul {
             --bs-gutter-x: 1rem;
         }

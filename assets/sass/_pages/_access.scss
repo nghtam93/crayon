@@ -446,6 +446,7 @@
         
         .el__item--left {
             @include flex-col(100%);
+            text-align: left;
         }
     }
 }

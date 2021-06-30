@@ -2808,6 +2808,11 @@ body.show-menu {
       line-height: normal;
       color: #504B46;
       font-family: 'KaufmannStd-Bold'; }
+  @media (min-width: 768px) {
+    .home-calendar {
+      padding: 50px 0; }
+      .home-calendar .el__header {
+        margin-bottom: 60px; } }
 
 .home-medical {
   padding: 265px 0 220px;
@@ -3225,11 +3230,26 @@ body.show-menu {
       width: 41.6666666667%; } }
 
 .home-service {
-  background-image: url(../../assets/img/home-service-bg.png);
+  position: relative;
   padding: 250px 0 160px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center; }
+  .home-service .container {
+    position: relative;
+    z-index: 1; }
+  .home-service:before {
+    content: "";
+    background-image: url(../../assets/img/home-service-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
   .home-service ul {
     list-style: none;
     padding-left: 0;
@@ -3298,11 +3318,24 @@ body.show-menu {
           height: 235px; } }
   @media (max-width: 1499px) {
     .home-service {
-      background-size: cover; } }
+      background-size: cover; }
+      .home-service:before {
+        background-size: cover; } }
   @media (max-width: 991px) {
     .home-service {
       padding: 120px 0 80px; } }
   @media (max-width: 767px) {
+    .home-service:before {
+      background-image: url(../../assets/img/home-service-bg2.png); }
+    .home-service:after {
+      content: "";
+      background: url(../../assets/img/home-service-bg-mb.png);
+      position: absolute;
+      top: -100px;
+      left: 0;
+      width: 100%;
+      height: calc(100% + 200px);
+      background-size: cover; }
     .home-service ul {
       --bs-gutter-x: 1rem; }
     .home-service .el__title {
@@ -4117,7 +4150,8 @@ body.show-menu {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
-        max-width: 100%; } }
+        max-width: 100%;
+        text-align: left; } }
 
 .access__info {
   padding: 100px 30px 200px; }
@@ -5500,5 +5534,13 @@ body.show-menu {
       background-repeat: no-repeat;
       background-position: center;
       background-size: 100% 100%; }
+  @media (max-width: 992px) {
+    .staff__about {
+      padding: 90px 0 100px; } }
+  @media (max-width: 767px) {
+    .staff__about {
+      padding: 40px 0 50px; }
+      .staff__about .el__header {
+        text-align: left; } }
 
 /*# sourceMappingURL=main.css.map */
