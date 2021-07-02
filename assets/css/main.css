@@ -3542,7 +3542,8 @@ body.show-menu {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url(../../assets/img/home-clgt-bg.png); }
+  background-image: url(../../assets/img/home-clgt-bg.png);
+  overflow: hidden; }
   .home-clgt .el__box {
     position: relative;
     background-image: url(../../assets/img/home-clgt-box.png);
@@ -3599,6 +3600,11 @@ body.show-menu {
       background-position: center;
       background-repeat: no-repeat;
       background-size: 100% 100%; }
+  @media (max-width: 1240px) {
+    .home-clgt .el__box:after {
+      right: -40px;
+      width: 135px;
+      height: 135px; } }
   @media (max-width: 1120px) {
     .home-clgt .el__box:before {
       width: 230px;

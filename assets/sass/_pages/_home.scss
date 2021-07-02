@@ -2086,6 +2086,7 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-image: url(../../assets/img/home-clgt-bg.png);
+    overflow: hidden;
     .el{
         &__box{
             position: relative;
@@ -2152,6 +2153,13 @@
             }
         }
         
+    }
+    @media (max-width: 1240px){
+        .el__box:after {
+            right: -40px;
+            width: 135px;
+            height: 135px;
+        }
     }
     @media (max-width: 1120px){
         .el__box{
