@@ -1808,6 +1808,12 @@ body.show-menu {
     text-align: center; }
     .footer__socical a:not(:last-child) {
       margin-right: 40px; }
+    .footer__socical a img {
+      border-radius: 50%;
+      transition: all .5s; }
+    .footer__socical a:hover img {
+      box-shadow: 0px 2px 5px #222;
+      transform: translateY(-5px); }
   .footer__nav {
     font-size: 18px;
     background-color: #fff;
@@ -4131,7 +4137,11 @@ body.show-menu {
   @media (max-width: 767px) {
     .access__details .el__item--left {
       font-size: 18px;
-      margin-bottom: 8px; } }
+      margin-bottom: 8px;
+      max-width: 100%;
+      margin-right: 0; }
+    .access__details .el__item--right {
+      text-align: center; } }
   @media (max-width: 575px) {
     .access__details {
       font-size: 14px; }

@@ -421,6 +421,11 @@
         .el__item--left {
             font-size: 18px;
             margin-bottom: 8px;
+            max-width: 100%;
+            margin-right: 0;
+        }
+        .el__item--right {
+            text-align: center;
         }
     }
     @media (max-width: 575px){
