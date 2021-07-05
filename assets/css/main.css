@@ -3791,8 +3791,9 @@ body.show-menu {
     .header__textclgt .el__title img {
       position: relative;
       top: 3px;
-      width: 30px;
-      height: 33px;
+      width: 400px;
+      max-width: 100%;
+      height: 35px;
       margin-right: 10px; }
   .header__textclgt .el__tel {
     font-size: 23px;
