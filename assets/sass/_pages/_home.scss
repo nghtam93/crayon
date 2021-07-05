@@ -158,7 +158,7 @@
                         }
                     }
                 }
-                
+
             }
         }
         &__meta{
@@ -174,7 +174,7 @@
             text-align: center;
         }
         &__thumb{
-            
+
             background-position: center;
             background-repeat: no-repeat;
             background-size: 100% 100%;
@@ -260,14 +260,14 @@
                             padding-top: 66%;
                         }
                     }
-                    
+
                 }
             }
         }
 
     }
     @media (max-width: 767px){
-        
+
         &:before{
             background-size: 180% 100%;
         }
@@ -341,7 +341,7 @@
                             padding-top: 66%;
                         }
                     }
-                    
+
                 }
             }
         }
@@ -608,7 +608,7 @@
 }
 
 .home-noteopen{
-    .el{  
+    .el{
         &__box{
             font-size: 16px;
             line-height: normal;
@@ -655,7 +655,7 @@
             }
         }
     }
-    
+
     @media (max-width: 991px){
         .el{
             &__sub2{
@@ -1078,7 +1078,7 @@
 
 .home-calendar{
     margin-bottom: 60px;
-    
+
     .el{
         &__header{
             margin-bottom: 20px;
@@ -1174,7 +1174,7 @@
         &__excerpt{
             line-height: 1.8;
         }
-        
+
         &__thumb{
             position: relative;
             max-width: 715px;
@@ -1284,7 +1284,7 @@
             &__position{
                 font-size: 20px;
                 font-weight: 400;
-                line-height: 1.8; 
+                line-height: 1.8;
                 margin-bottom: 15px;
             }
             ruby{
@@ -1363,7 +1363,7 @@
             max-width: 520px;
             margin: 0 auto 40px;
             .dnfix__thumb{
-                
+
                 padding-top: 100%;
             }
 
@@ -1388,7 +1388,7 @@
                 -webkit-mask-image: url(../../assets/img/greeting-img-mask.png);
                 mask-image: url(../../assets/img/greeting-img-mask.png);
             }
-            
+
         }
     }
     @media (max-width: 1299px){
@@ -1535,7 +1535,7 @@
             max-width: 730px;
             margin-left: auto;
             margin-bottom: 15px;
-            
+
             .dnfix__thumb{
                 padding-top: 66%;
             }
@@ -1816,7 +1816,7 @@
             height: calc(100% + 200px);
             background-size: cover;
         }
-        
+
         ul {
             --bs-gutter-x: 1rem;
         }
@@ -2086,7 +2086,6 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-image: url(../../assets/img/home-clgt-bg.png);
-    overflow: hidden;
     .el{
         &__box{
             position: relative;

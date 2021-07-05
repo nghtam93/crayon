@@ -3542,8 +3542,7 @@ body.show-menu {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url(../../assets/img/home-clgt-bg.png);
-  overflow: hidden; }
+  background-image: url(../../assets/img/home-clgt-bg.png); }
   .home-clgt .el__box {
     position: relative;
     background-image: url(../../assets/img/home-clgt-box.png);
