@@ -326,16 +326,38 @@
                         <div class="el__header__sub">Medical calendar</div>
                     </div>
                 </div>
-
+                <script>
+                     window.onload = googleCalendarSet;
+                    function googleCalendarSet(){
+                    //カレンダーの埋め込みコードをコピペして分割する
+                    var calendarCode1 = '<iframe src="https://calendar.google.com/calendar/b/1/embed?';
+                    var calenderCode2 = 'showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;src=aHQzamxmYWFjNWxmZDYyNjN1bGZoNHRxbDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23B39DDB&amp;color=%230B8043&amp;showTitle=0&amp;title=VISCA%20CLINIC%20%E3%81%AE%E8%A8%BA%E7%99%82%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC&amp;showTabs=0&amp;showPrint=0&amp;showTz=0&amp;showCalendars=0&amp;showNav=1&amp;showDate=1" style="border-width:0" width="100%" height="300px" frameborder="0" scrolling="no"></iframe>'
+                    /*来月のカレンダー*/
+                    var today = new Date;
+                    var myYear = today.getFullYear();//年を取得
+                    var myMonth = today.getMonth()+1;//月を取得、1月が0から始まるからややこしい
+                    var nextMonth = myMonth+1;
+                    //12月を超えると1月に
+                    　if(nextMonth>12){nextMonth-=12;myYear+=1;};
+                    //10以下を二ケタに
+                    if(nextMonth<10){nextMonth = "0"+nextMonth;};
+                    //日付を出力
+                    var dates = "dates="+String(myYear)+String(nextMonth)+"01/"+String(myYear)+String(nextMonth)+"01&amp;";
+                    //指定したidを書き換え
+                    document.getElementById("nextMonthCal").innerHTML = calendarCode1+dates+calenderCode2;
+                    /*今月のカレンダー*/
+                    　document.getElementById("MonthCal").innerHTML = calendarCode1+calenderCode2;
+                    }
+                </script>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="calendar-wrap  wow zoomIn" style="visibility: visible; animation-name: zoomIn;">
-                            <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;src=aHQzamxmYWFjNWxmZDYyNjN1bGZoNHRxbDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23B39DDB&amp;color=%230B8043&amp;showTitle=0&amp;title=VISCA%20CLINIC%20%E3%81%AE%E8%A8%BA%E7%99%82%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC&amp;showTabs=0&amp;showPrint=0&amp;showTz=0&amp;showCalendars=0&amp;showNav=1&amp;showDate=1" style="border: 0" width="100%" height="300px" frameborder="0" scrolling="no"></iframe>
+                            <div id="MonthCal"></div>
                         </div>
                     </div>
                     <div class="col-md-6 d-none d-md-block">
                         <div class="calendar-wrap  wow zoomIn" style="visibility: visible; animation-name: zoomIn;">
-                            <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;src=aHQzamxmYWFjNWxmZDYyNjN1bGZoNHRxbDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23B39DDB&amp;color=%230B8043&amp;showTitle=0&amp;title=VISCA%20CLINIC%20%E3%81%AE%E8%A8%BA%E7%99%82%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC&amp;showTabs=0&amp;showPrint=0&amp;showTz=0&amp;showCalendars=0&amp;showNav=1&amp;showDate=1" style="border: 0" width="100%" height="300px" frameborder="0" scrolling="no"></iframe>
+                            <div id="nextMonthCal"></div>
                         </div>
                     </div>
                 </div>
