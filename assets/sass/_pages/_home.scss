@@ -1418,7 +1418,7 @@
                 &__wrap{
                     &:before{
                         background-image: url(../../assets/img/home-greeting-mb-header.png);
-                        height: 160px;
+                        height: 155px;
                     }
                 }
             }
@@ -1440,6 +1440,11 @@
                 &__title {
                     padding: 0 10px 40px 40px;
                     font-size: 28px;
+                }
+                &__wrap{
+                    &:before{
+                        top:-45px;
+                    }
                 }
             }
             &__position {

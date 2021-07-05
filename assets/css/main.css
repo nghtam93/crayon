@@ -1615,8 +1615,8 @@ img {
     line-height: 30px;
     color: #504B46; }
     .header-mb__text img {
-      width: 20px;
-      height: 20px; }
+      width: 242px;
+      height: 23px; }
   @media (max-width: 991px) {
     .header--mb {
       display: block;
@@ -3044,7 +3044,7 @@ body.show-menu {
         padding: 70px 0 20px 155px; }
       .home-greeting .el__header__wrap:before {
         background-image: url(../../assets/img/home-greeting-mb-header.png);
-        height: 160px; }
+        height: 155px; }
       .home-greeting .el__excerpt {
         font-size: 15px; } }
   @media (max-width: 620px) {
@@ -3056,6 +3056,8 @@ body.show-menu {
       .home-greeting .el__header__title {
         padding: 0 10px 40px 40px;
         font-size: 28px; }
+      .home-greeting .el__header__wrap:before {
+        top: -45px; }
     .home-greeting .el__position {
       font-size: 16px; }
     .home-greeting .el__name {
@@ -5235,9 +5237,9 @@ body.show-menu {
     align-items: start; }
     .staff__doctor .el__item--left {
       -webkit-box-flex: 0;
-      -ms-flex: 0 0 275px;
-      flex: 0 0 275px;
-      max-width: 275px;
+      -ms-flex: 0 0 292px;
+      flex: 0 0 292px;
+      max-width: 292px;
       margin-right: 50px;
       margin-bottom: 30px; }
   .staff__doctor .el__info {
@@ -5272,18 +5274,20 @@ body.show-menu {
     margin-bottom: 30px; }
     .staff__doctor .el__thumb .dnfix__thumb {
       padding-top: 100%;
-      z-index: 1; }
+      z-index: 1;
+      max-width: 275px; }
     .staff__doctor .el__thumb::after {
       content: "";
       position: absolute;
       top: -10px;
       left: -20px;
       width: 100%;
-      height: calc(100% + 20px);
+      height: 100%;
       background-image: url(../../assets/img/service__doctor-border.png);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 100% 100%; }
+      background-size: 100% 100%;
+      z-index: 1; }
   .staff__doctor .el__excerpt {
     font-size: 16px;
     line-height: 1.8;
@@ -5363,7 +5367,8 @@ body.show-menu {
   .staff__doctor .el__sub {
     font-size: 16px;
     line-height: 28px;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    flex-grow: 1; }
     .staff__doctor .el__sub li {
       display: -ms-flexbox;
       display: -webkit-box;

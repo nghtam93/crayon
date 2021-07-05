@@ -105,7 +105,7 @@
             &__position{
                 font-size: 20px;
                 font-weight: 400;
-                line-height: 1.8; 
+                line-height: 1.8;
                 margin-bottom: 15px;
             }
             ruby{
@@ -351,7 +351,7 @@
         &__item{
             align-items: start;
             &--left{
-                @include flex-col(275px);
+                @include flex-col(292px);
                 margin-right: 50px;
                 margin-bottom: 30px;
             }
@@ -398,6 +398,7 @@
             .dnfix__thumb{
                 padding-top: 100%;
                 z-index: 1;
+                max-width: 275px;
             }
             &::after{
                 content: "";
@@ -405,11 +406,12 @@
                 top: -10px;
                 left: -20px;
                 width: 100%;
-                height: calc(100% + 20px);
+                height: 100%;
                 background-image: url(../../assets/img/service__doctor-border.png);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: 100% 100%;
+                z-index: 1;
             }
         }
         &__excerpt{
@@ -493,6 +495,7 @@
             font-size: 16px;
             line-height: 28px;
             margin-bottom: 0;
+            flex-grow: 1;
             li{
                 @include flexbox;
                 span{
